@@ -1,0 +1,11 @@
+# Configuration for tao-workflows
+# Add your settings here for each updater
+
+scholar:
+  user_id: "YOUR_GOOGLE_SCHOLAR_ID"  # Replace with your actual Google Scholar ID
+  output_file: "data/scholar_citations.yml"
+
+# Add more updater configs here, e.g.:
+# github:
+#   username: "dongzhuoyao"
+#   output_file: "data/github_stats.yml"

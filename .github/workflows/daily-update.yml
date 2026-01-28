@@ -62,14 +62,81 @@ jobs:
         if: steps.run_updaters.outputs.has_errors == 'true' || failure()
         env:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_RUN_ID: ${{ github.run_id }}
         run: |
-          # Build email body
-          BODY="Workflow failed.\n\nRepo: ${{ github.repository }}\nRun: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          python3 << 'EOF'
+          import json, os, urllib.request, urllib.error
 
-          # Send via Resend API
-          curl -s -X POST 'https://api.resend.com/emails' \
-            -H "Authorization: Bearer $RESEND_API_KEY" \
-            -H "Content-Type: application/json" \
-            -H "User-Agent: tao-workflows/1.0" \
-            -d "{\"from\":\"onboarding@resend.dev\",\"to\":\"taohu620@gmail.com\",\"subject\":\"tao-workflows Failed\",\"text\":\"$BODY\"}" \
-            || echo "Email notification failed (non-critical)"
+          # Read updater output
+          output = ""
+          if os.path.exists("updater_output.txt"):
+              output = open("updater_output.txt").read()
+
+          # Extract failed updaters and errors
+          lines = output.split("\n")
+          failed_tasks = []
+          current_task = ""
+          errors = []
+
+          for line in lines:
+              if line.startswith("Running:"):
+                  current_task = line.replace("Running:", "").strip()
+              elif "Error:" in line or "Error " in line:
+                  errors.append(f"[{current_task}] {line.strip()}")
+              elif "SKIPPED/FAILED" in line and current_task:
+                  # Check if it was a real failure (had errors above)
+                  pass
+
+          # Find tasks that failed (not just skipped)
+          for i, line in enumerate(lines):
+              if "Error:" in line:
+                  # Look backwards for the task name
+                  for j in range(i, -1, -1):
+                      if "Running:" in lines[j]:
+                          task = lines[j].replace("Running:", "").strip()
+                          if task not in failed_tasks:
+                              failed_tasks.append(task)
+                          break
+
+          # Build email body
+          body = f"""tao-workflows Daily Update Failed
+
+          Repository: {os.environ.get('GITHUB_REPOSITORY', 'unknown')}
+          Run URL: https://github.com/{os.environ.get('GITHUB_REPOSITORY', '')}/actions/runs/{os.environ.get('GITHUB_RUN_ID', '')}
+
+          {'='*50}
+          FAILED TASKS: {', '.join(failed_tasks) if failed_tasks else 'Unknown'}
+          {'='*50}
+
+          ERRORS:
+          {chr(10).join(errors) if errors else 'No specific errors captured'}
+
+          {'='*50}
+          FULL OUTPUT:
+          {'='*50}
+          {output[:3000]}
+          """
+
+          data = json.dumps({
+              "from": "onboarding@resend.dev",
+              "to": "taohu620@gmail.com",
+              "subject": f"tao-workflows FAILED: {', '.join(failed_tasks) if failed_tasks else 'Unknown error'}",
+              "text": body
+          }).encode()
+
+          req = urllib.request.Request(
+              "https://api.resend.com/emails",
+              data=data,
+              headers={
+                  "Authorization": f"Bearer {os.environ['RESEND_API_KEY']}",
+                  "Content-Type": "application/json",
+                  "User-Agent": "tao-workflows/1.0"
+              }
+          )
+          try:
+              resp = urllib.request.urlopen(req)
+              print("Email sent:", resp.read().decode())
+          except urllib.error.HTTPError as e:
+              print(f"Email failed: {e.code} - {e.read().decode()}")
+          EOF

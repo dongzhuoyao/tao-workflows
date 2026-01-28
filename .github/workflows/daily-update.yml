@@ -60,23 +60,13 @@ jobs:
 
       - name: Send failure notification email
         if: steps.run_updaters.outputs.has_errors == 'true' || failure()
-        uses: dawidd6/action-send-mail@v3
-        with:
-          server_address: smtp.gmail.com
-          server_port: 587
-          username: ${{ secrets.SMTP_USERNAME }}
-          password: ${{ secrets.SMTP_PASSWORD }}
-          subject: "⚠️ tao-workflows Daily Update Failed"
-          to: taohu620@gmail.com
-          from: tao-workflows <${{ secrets.SMTP_USERNAME }}>
-          body: |
-            The daily data update workflow encountered errors.
-
-            Repository: ${{ github.repository }}
-            Run ID: ${{ github.run_id }}
-            Run URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
-
-            --- Updater Output ---
-            $(cat updater_output.txt 2>/dev/null || echo "No output captured")
-
-            Please check the workflow logs for more details.
+        run: |
+          curl -X POST 'https://api.resend.com/emails' \
+            -H 'Authorization: Bearer ${{ secrets.RESEND_API_KEY }}' \
+            -H 'Content-Type: application/json' \
+            -d "{
+              \"from\": \"tao-workflows <onboarding@resend.dev>\",
+              \"to\": [\"taohu620@gmail.com\"],
+              \"subject\": \"⚠️ tao-workflows Daily Update Failed\",
+              \"text\": \"The daily data update workflow encountered errors.\n\nRepository: ${{ github.repository }}\nRun ID: ${{ github.run_id }}\nRun URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}\n\n--- Updater Output ---\n$(cat updater_output.txt 2>/dev/null | head -50 || echo 'No output captured')\n\nPlease check the workflow logs for more details.\"
+            }"

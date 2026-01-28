@@ -60,13 +60,40 @@ jobs:
 
       - name: Send failure notification email
         if: steps.run_updaters.outputs.has_errors == 'true' || failure()
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          REPO: ${{ github.repository }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
         run: |
-          curl -X POST 'https://api.resend.com/emails' \
-            -H 'Authorization: Bearer ${{ secrets.RESEND_API_KEY }}' \
-            -H 'Content-Type: application/json' \
-            -d "{
-              \"from\": \"tao-workflows <onboarding@resend.dev>\",
-              \"to\": [\"taohu620@gmail.com\"],
-              \"subject\": \"⚠️ tao-workflows Daily Update Failed\",
-              \"text\": \"The daily data update workflow encountered errors.\n\nRepository: ${{ github.repository }}\nRun ID: ${{ github.run_id }}\nRun URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}\n\n--- Updater Output ---\n$(cat updater_output.txt 2>/dev/null | head -50 || echo 'No output captured')\n\nPlease check the workflow logs for more details.\"
-            }"
+          python3 << 'PYEOF'
+          import json, os, urllib.request
+
+          output = open("updater_output.txt").read()[:2000] if os.path.exists("updater_output.txt") else "No output"
+
+          body = f"""The daily data update workflow encountered errors.
+
+          Repository: {os.environ['REPO']}
+          Run URL: {os.environ['RUN_URL']}
+
+          --- Updater Output ---
+          {output}
+          """
+
+          data = json.dumps({
+              "from": "tao-workflows <onboarding@resend.dev>",
+              "to": ["taohu620@gmail.com"],
+              "subject": "tao-workflows Daily Update Failed",
+              "text": body
+          }).encode()
+
+          req = urllib.request.Request(
+              "https://api.resend.com/emails",
+              data=data,
+              headers={
+                  "Authorization": f"Bearer {os.environ['RESEND_API_KEY']}",
+                  "Content-Type": "application/json"
+              }
+          )
+          resp = urllib.request.urlopen(req)
+          print(resp.read().decode())
+          PYEOF

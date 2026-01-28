@@ -6,7 +6,7 @@ scholar:
   output_file: "data/scholar_citations.yml"
 
 youtube:
-  channel: ""  # Temporarily empty to test email
+  channel: "@vincenttalk"
   output_file: "data/youtube_subscribers.yml"
 
 bilibili:

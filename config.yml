@@ -5,6 +5,14 @@ scholar:
   user_id: "YOUR_GOOGLE_SCHOLAR_ID"  # Replace with your actual Google Scholar ID
   output_file: "data/scholar_citations.yml"
 
+youtube:
+  channel: "@vincenttalk"  # YouTube handle (e.g. @vincenttalk) or full URL
+  output_file: "data/youtube_subscribers.yml"
+
+bilibili:
+  mid: "494163254"  # Bilibili user ID (from space.bilibili.com/494163254)
+  output_file: "data/bilibili_stats.yml"
+
 # Add more updater configs here, e.g.:
 # github:
 #   username: "dongzhuoyao"

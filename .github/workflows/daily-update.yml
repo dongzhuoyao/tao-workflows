@@ -31,11 +31,19 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run updaters
+        id: run_updaters
+        continue-on-error: true
         run: |
           if [ "${{ github.event.inputs.updaters }}" = "all" ] || [ -z "${{ github.event.inputs.updaters }}" ]; then
-            python main.py
+            python main.py 2>&1 | tee updater_output.txt
           else
-            python main.py ${{ github.event.inputs.updaters }}
+            python main.py ${{ github.event.inputs.updaters }} 2>&1 | tee updater_output.txt
+          fi
+          # Check if any updater failed (not just skipped)
+          if grep -q "Error:" updater_output.txt; then
+            echo "has_errors=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_errors=false" >> $GITHUB_OUTPUT
           fi
 
       - name: Commit and push changes
@@ -49,3 +57,26 @@ jobs:
             git commit -m "Update data $(date -u +%Y-%m-%d)"
             git push
           fi
+
+      - name: Send failure notification email
+        if: steps.run_updaters.outputs.has_errors == 'true' || failure()
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 587
+          username: ${{ secrets.SMTP_USERNAME }}
+          password: ${{ secrets.SMTP_PASSWORD }}
+          subject: "⚠️ tao-workflows Daily Update Failed"
+          to: taohu620@gmail.com
+          from: tao-workflows <${{ secrets.SMTP_USERNAME }}>
+          body: |
+            The daily data update workflow encountered errors.
+
+            Repository: ${{ github.repository }}
+            Run ID: ${{ github.run_id }}
+            Run URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+
+            --- Updater Output ---
+            $(cat updater_output.txt 2>/dev/null || echo "No output captured")
+
+            Please check the workflow logs for more details.

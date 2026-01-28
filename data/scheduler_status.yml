@@ -1,8 +1,9 @@
 metadata:
-  last_updated: '2026-01-28 17:47:51'
+  last_updated: '2026-01-28 18:08:44'
   machine: macbook
   total_jobs: 3
-  healthy_jobs: 3
+  process_ok_count: 3
+  last_success_count: 0
 jobs:
   tgnews:
     name: Telegram News
@@ -10,8 +11,9 @@ jobs:
     schedule: Every 2h at :11
     loaded: true
     exit_status: '0'
-    healthy: true
-    last_run: '2026-01-28 16:11:28'
+    process_ok: true
+    last_run: null
+    last_result: unknown
     next_run: '2026-01-28 18:11:00'
   rednote:
     name: RedNote Post
@@ -19,8 +21,9 @@ jobs:
     schedule: Every 1h at :41
     loaded: true
     exit_status: '0'
-    healthy: true
+    process_ok: true
     last_run: '2026-01-28 17:41:38'
+    last_result: failed
     next_run: '2026-01-28 18:41:00'
   rednote_stats:
     name: RedNote Stats
@@ -28,6 +31,7 @@ jobs:
     schedule: Daily at 23:30
     loaded: true
     exit_status: '0'
-    healthy: true
+    process_ok: true
     last_run: '2026-01-27 23:30:16'
+    last_result: unknown
     next_run: '2026-01-28 23:30:00'

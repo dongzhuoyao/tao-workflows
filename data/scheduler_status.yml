@@ -1,0 +1,33 @@
+metadata:
+  last_updated: '2026-01-28 17:47:15'
+  machine: macbook
+  total_jobs: 3
+  healthy_jobs: 3
+jobs:
+  tgnews:
+    name: Telegram News
+    label: com.antsbot.tgnews
+    schedule: Every 2h at :11
+    loaded: true
+    exit_status: '0'
+    healthy: true
+    last_run: '2026-01-28 16:11:28'
+    next_run: '2026-01-28 18:11:00'
+  rednote:
+    name: RedNote Post
+    label: com.antsbot.rednote
+    schedule: Every 1h at :41
+    loaded: true
+    exit_status: '0'
+    healthy: true
+    last_run: '2026-01-28 17:41:38'
+    next_run: '2026-01-28 18:41:00'
+  rednote_stats:
+    name: RedNote Stats
+    label: com.antsbot.rednote-stats
+    schedule: Daily at 23:30
+    loaded: true
+    exit_status: '0'
+    healthy: true
+    last_run: '2026-01-27 23:30:16'
+    next_run: '2026-01-28 23:30:00'

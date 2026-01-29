@@ -2,7 +2,7 @@
 # Add your settings here for each updater
 
 scholar:
-  user_id: "YOUR_GOOGLE_SCHOLAR_ID"  # Replace with your actual Google Scholar ID
+  user_id: "EchdyZEAAAAJ"  # Vincent Tao Hu's Google Scholar ID
   output_file: "data/scholar_citations.yml"
 
 youtube:

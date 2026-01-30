@@ -1,0 +1,154 @@
+metadata:
+  last_updated: '2026-01-30'
+  scholar_id: EchdyZEAAAAJ
+  total_citations: 1285
+  paper_count: 37
+papers:
+  Zph67rFs4hoC:
+    title: 'Pointmixup: Augmentation for point clouds'
+    year: '2020'
+    citations: 247
+  r0BpntZqJG4C:
+    title: 'ZigMa: A DiT-style Zigzag Mamba Diffusion Model'
+    year: '2024'
+    citations: 189
+  Se3iqnhoufwC:
+    title: Attention-based multi-context guiding for few-shot semantic segmentation
+    year: '2019'
+    citations: 177
+  ns9cj8rnVeAC:
+    title: 'DepthFM: Fast Generative Monocular Depth Estimation with Flow Matching'
+    year: '2025'
+    citations: 105
+  MXK_kJrjxJIC:
+    title: Localizing the Common Action Among a Few Videos
+    year: '2020'
+    citations: 84
+  YOwf2qJgpHMC:
+    title: 'Silco: Show a few images, localize the common object'
+    year: '2019'
+    citations: 58
+  R3hNpaxXUhUC:
+    title: Self-guided diffusion models
+    year: '2023'
+    citations: 56
+  TFP_iSt0sucC:
+    title: 'Diffusion Models and Representation Learning: A Survey'
+    year: '2024'
+    citations: 45
+  mVmsd5A6BfQC:
+    title: Latent space editing in transformer-based flow matching
+    year: '2023'
+    citations: 39
+  BqipwSGYUEgC:
+    title: Boosting latent diffusion with flow matching
+    year: '2023'
+    citations: 37
+  M3ejUd6NZC8C:
+    title: Accelerating Convolutional Neural Networks with Dynamic Channel Pruning.
+    year: '2019'
+    citations: 33
+  -f6ydRqryjwC:
+    title: Motion Flow Matching for Human Motion Synthesis and Editing
+    year: '2023'
+    citations: 32
+  iH-uZ7U-co4C:
+    title: Continuous, Subject-Specific Attribute Control in T2I Models by Identifying Semantic Directions
+    year: '2024'
+    citations: 26
+  e5wmG9Sq2KIC:
+    title: Flow Matching for Conditional Text Generation in a Few Sampling Steps
+    year: '2024'
+    citations: 26
+  ULOm3_A8WrAC:
+    title: Self-supervised Video Representation Learning with Cross-Stream Prototypical Contrasting
+    year: '2021'
+    citations: 20
+  qxL8FJ1GzNcC:
+    title: Sobel heuristic kernel for aerial semantic segmentation
+    year: '2018'
+    citations: 13
+  k_IJM867U9cC:
+    title: 'Retinex-Diffusion: On Controlling Illumination Conditions in Diffusion Models via Retinex Theory'
+    year: '2025'
+    citations: 12
+  TQgYirikUcIC:
+    title: Training Class-Imbalanced Diffusion Model Via Overlap Optimization
+    year: '2024'
+    citations: 11
+  maZDTaKrznsC:
+    title: Distillation of Diffusion Features for Semantic Correspondence
+    year: '2024'
+    citations: 9
+  qUcmZB5y_30C:
+    title: Guided Diffusion from Self-Supervised Diffusion Features
+    year: '2023'
+    citations: 9
+  RYcK_YlVTxYC:
+    title: Can Prompt Difficulty be Online Predicted for Accelerating RL Finetuning of Reasoning Models?
+    year: '2025'
+    citations: 8
+  YFjsv_pBGBYC:
+    title: 'MaskFlow: Discrete Flows For Flexible and Efficient Long Video Generation'
+    year: '2025'
+    citations: 8
+  5nxA0vEk-isC:
+    title: Interactivity Proposals for Surveillance Videos
+    year: '2020'
+    citations: 7
+  ZeXyd9-uunAC:
+    title: Generative Data Augmentation Improves Scribble-supervised Semantic Segmentation
+    year: '2023'
+    citations: 6
+  bEWYMUwI8FkC:
+    title: 'ScribbleGen: Generative Data Augmentation Improves Scribble-supervised Semantic Segmentation'
+    year: Unknown
+    citations: 6
+  hMod-77fHWUC:
+    title: 'TREAD: Token Routing for Efficient Architecture-agnostic Diffusion Training'
+    year: '2025'
+    citations: 5
+  ufrVoPGSRksC:
+    title: 'Dense In Dense: Training Segmentation from Scratch'
+    year: '2019'
+    citations: 5
+  GnPB-g6toBAC:
+    title: 'ToddlerDiffusion: Interactive Structured Image Generation with Cascaded Schrödinger Bridge'
+    year: Unknown
+    citations: 5
+  NMxIlDl6LWMC:
+    title: Does VLM Classification Benefit from LLM Description Semantics?
+    year: '2024'
+    citations: 3
+  J_g5lzvAfSwC:
+    title: 'ActAlign: Zero-Shot Fine-Grained Video Classification via Language-Guided Sequence Alignment'
+    year: '2025'
+    citations: 2
+  RGFaLdJalmkC:
+    title: ThomasMensink, Pascal Mettes, Pengwan Yang, and Cees GMSnoek
+    year: '2020'
+    citations: 2
+  lSLTfruPkqcC:
+    title: 'Purrception: Variational Flow Matching for Vector-Quantized Image Generation'
+    year: '2025'
+    citations: 0
+  blknAaTinKkC:
+    title: '[MASK] is All You Need'
+    year: '2024'
+    citations: 0
+  M3NEmzRMIkIC:
+    title: Scaling Image Tokenizers with Grouped Spherical Quantization
+    year: '2024'
+    citations: 0
+  7PzlFSSx8tAC:
+    title: Query by Activity Video in the Wild
+    year: '2023'
+    citations: 0
+  Wp0gIr-vW9MC:
+    title: Video Classification from scratch
+    year: '2018'
+    citations: 0
+  mB3voiENLucC:
+    title: Localizing the Common Action Among a Few Videos-Supplementary File
+    year: Unknown
+    citations: 0

@@ -22,3 +22,17 @@ posts:
   image_count: 10
   source_id: '2601.15778'
   success: true
+database_stats:
+  last_updated: '2026-02-02 00:22:28'
+  tweets:
+    total: 2410
+    unpublished: 2
+  arxiv:
+    total: 217
+    unpublished: 97
+  projects:
+    total: 2
+    unpublished: 0
+  images:
+    total: 1
+    unpublished: 0

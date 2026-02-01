@@ -1,37 +1,37 @@
-metadata:
-  last_updated: '2026-01-28 18:08:44'
-  machine: macbook
-  total_jobs: 3
-  process_ok_count: 3
-  last_success_count: 0
 jobs:
-  tgnews:
-    name: Telegram News
-    label: com.antsbot.tgnews
-    schedule: Every 2h at :11
-    loaded: true
-    exit_status: '0'
-    process_ok: true
-    last_run: null
-    last_result: unknown
-    next_run: '2026-01-28 18:11:00'
   rednote:
-    name: RedNote Post
+    exit_status: '0'
     label: com.antsbot.rednote
-    schedule: Every 1h at :41
-    loaded: true
-    exit_status: '0'
-    process_ok: true
-    last_run: '2026-01-28 17:41:38'
     last_result: failed
-    next_run: '2026-01-28 18:41:00'
-  rednote_stats:
-    name: RedNote Stats
-    label: com.antsbot.rednote-stats
-    schedule: Daily at 23:30
+    last_run: '2026-01-28 17:41:38'
     loaded: true
-    exit_status: '0'
+    name: RedNote Post
+    next_run: '2026-01-28 18:41:00'
     process_ok: true
-    last_run: '2026-01-27 23:30:16'
+    schedule: Every 1h at :41
+  rednote_stats:
+    exit_status: '0'
+    label: com.antsbot.rednote-stats
     last_result: unknown
+    last_run: '2026-01-27 23:30:16'
+    loaded: true
+    name: RedNote Stats
     next_run: '2026-01-28 23:30:00'
+    process_ok: true
+    schedule: Daily at 23:30
+  tgnews:
+    exit_status: '0'
+    label: com.antsbot.tgnews
+    last_result: success
+    last_run: '2026-02-01 16:10:46'
+    loaded: true
+    name: Telegram News
+    next_run: '2026-02-01 18:11:00'
+    process_ok: true
+    schedule: Every 2h at :11
+metadata:
+  last_success_count: 1
+  last_updated: '2026-02-01 16:10:46'
+  machine: macbook
+  process_ok_count: 3
+  total_jobs: 3

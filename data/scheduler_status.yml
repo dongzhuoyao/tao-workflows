@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-02-01 22:06:54'
+  last_updated: '2026-02-01 22:11:37'
   machine: macbook
   total_jobs: 4
   process_ok_count: 2
@@ -12,9 +12,9 @@ jobs:
     loaded: true
     exit_status: '0'
     process_ok: true
-    last_run: null
+    last_run: '2026-02-01 22:11:05'
     last_result: unknown
-    next_run: '2026-02-01 22:11:00'
+    next_run: '2026-02-02 00:11:00'
   rednote:
     name: RedNote Post
     label: com.antsbot.rednote

@@ -1,57 +1,57 @@
 metadata:
-  last_updated: '2026-02-01 23:53:34'
+  last_updated: '2026-02-02 00:02:13'
   machine: macbook
   total_jobs: 5
-  process_ok_count: 1
+  process_ok_count: 4
   last_success_count: 0
 jobs:
   tgnews:
     name: Telegram News
     label: com.antsbot.tgnews
-    schedule: Unknown
-    loaded: false
-    exit_status: null
-    process_ok: false
-    last_run: null
-    last_result: no_log
-    next_run: null
-  rednote:
-    name: RedNote Post
-    label: com.antsbot.rednote
-    schedule: Unknown
-    loaded: false
-    exit_status: null
-    process_ok: false
-    last_run: null
-    last_result: no_log
-    next_run: null
-  rednote_stats:
-    name: RedNote Stats
-    label: com.antsbot.rednote-stats
-    schedule: Unknown
-    loaded: false
-    exit_status: null
-    process_ok: false
-    last_run: null
-    last_result: no_log
-    next_run: null
-  trending:
-    name: Trending Papers
-    label: com.antsbot.trending
-    schedule: Unknown
-    loaded: false
-    exit_status: null
-    process_ok: false
-    last_run: null
-    last_result: no_log
-    next_run: null
-  health:
-    name: Health Check
-    label: com.antsbot.health
-    schedule: Every 10m
+    schedule: Every 2h at :11
     loaded: true
     exit_status: '0'
     process_ok: true
-    last_run: '2026-02-01 23:43:34'
+    last_run: '2026-02-01 22:11:05'
+    last_result: unknown
+    next_run: '2026-02-02 00:11:00'
+  rednote:
+    name: RedNote Post
+    label: com.antsbot.rednote
+    schedule: Every 1h at :41
+    loaded: true
+    exit_status: '0'
+    process_ok: true
+    last_run: '2026-02-01 23:42:53'
     last_result: failed
-    next_run: '2026-02-02 00:03:34'
+    next_run: '2026-02-02 00:41:00'
+  rednote_stats:
+    name: RedNote Stats
+    label: com.antsbot.rednote-stats
+    schedule: Daily at 23:30
+    loaded: true
+    exit_status: '0'
+    process_ok: true
+    last_run: '2026-02-01 23:30:16'
+    last_result: failed
+    next_run: '2026-02-02 23:30:00'
+  trending:
+    name: Trending Papers
+    label: com.antsbot.trending
+    schedule: 3x/day at :31
+    loaded: true
+    exit_status: '0'
+    process_ok: true
+    last_run: null
+    last_result: no_log
+    next_run: '2026-02-02 00:31:00'
+  health:
+    name: Health Check
+    label: com.antsbot.health
+    schedule: Unknown
+    loaded: false
+    exit_status: null
+    process_ok: false
+    last_run: null
+    last_result: no_log
+    next_run: null

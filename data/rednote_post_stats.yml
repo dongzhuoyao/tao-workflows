@@ -1,7 +1,7 @@
 metadata:
-  last_updated: '2026-02-02 07:43:05'
-  total_posts: 10
-  success_count: 10
+  last_updated: '2026-02-02 08:42:50'
+  total_posts: 11
+  success_count: 11
 posts:
 - created_at: '2026-02-01 22:52:10'
   post_type: arxiv
@@ -125,6 +125,19 @@ posts:
   content_length: 705
   image_count: 7
   source_id: '2601.19228'
+  success: true
+- created_at: '2026-02-02 08:42:50'
+  post_type: arxiv
+  title: '🔥颠覆性突破！Axe统一ML编译器布局抽象
+
+
+    性能暴涨44%！这个编译器抽象让AI模型推理起飞了
+
+
+    现在的AI大模型参数巨大，如何高效运行在成百上千张GPU上？传统方法割裂：分布式切分用一套系统（如P'
+  content_length: 906
+  image_count: 7
+  source_id: '2601.19092'
   success: true
 database_stats:
   last_updated: '2026-02-02 08:36:27'

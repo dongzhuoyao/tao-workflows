@@ -1,7 +1,7 @@
 metadata:
-  last_updated: '2026-02-02 09:43:27'
-  total_posts: 12
-  success_count: 12
+  last_updated: '2026-02-02 10:42:40'
+  total_posts: 13
+  success_count: 13
 posts:
 - created_at: '2026-02-01 22:52:10'
   post_type: arxiv
@@ -151,6 +151,21 @@ posts:
   content_length: 890
   image_count: 7
   source_id: '2601.21716'
+  success: true
+- created_at: '2026-02-02 10:42:40'
+  post_type: arxiv
+  title: 'AI安全大揭秘！最佳N采样风险暴涨🔥
+
+
+    ## 大模型安全评估翻车了？Best-of-N采样下风险暴涨的秘密
+
+
+    传统评测只测单次攻击成功率，严重低估真实风险！😱
+
+    攻击者可以并行采样上千次，直到模型“破防'
+  content_length: 883
+  image_count: 7
+  source_id: '2601.22636'
   success: true
 database_stats:
   last_updated: '2026-02-02 10:37:22'

@@ -1,7 +1,7 @@
 metadata:
-  last_updated: '2026-02-02 00:42:47'
-  total_posts: 3
-  success_count: 3
+  last_updated: '2026-02-02 01:42:50'
+  total_posts: 4
+  success_count: 4
 posts:
 - created_at: '2026-02-01 22:52:10'
   post_type: arxiv
@@ -34,6 +34,21 @@ posts:
   content_length: 767
   image_count: 8
   source_id: '2601.14243'
+  success: true
+- created_at: '2026-02-02 01:42:50'
+  post_type: arxiv
+  title: 'AI安全大地震！六大模型报告曝光🔥
+
+
+    ## 六大顶流模型安全大考，谁最危险？🚨
+
+
+    AI能力越来越强，但安全性跟上了吗？🤔
+
+    这篇报告对GPT-5.2、Gemini 3 Pro等6个前沿模型进行了全面“体'
+  content_length: 749
+  image_count: 7
+  source_id: '2601.10527'
   success: true
 database_stats:
   last_updated: '2026-02-02 01:33:14'

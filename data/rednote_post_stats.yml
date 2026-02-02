@@ -1,7 +1,7 @@
 metadata:
-  last_updated: '2026-02-02 13:43:24'
-  total_posts: 16
-  success_count: 16
+  last_updated: '2026-02-02 14:43:04'
+  total_posts: 17
+  success_count: 17
 posts:
 - created_at: '2026-02-01 22:52:10'
   post_type: arxiv
@@ -202,6 +202,16 @@ posts:
   content_length: 584
   image_count: 12
   source_id: '2601.23265'
+  success: true
+- created_at: '2026-02-02 14:43:04'
+  post_type: arxiv
+  title: '🔥视觉记忆革命！让AI看懂复杂布局
+
+
+    视觉记忆革命！MemOCR将文本压缩成图片，推理性能暴涨8倍。传统方法要么塞满原始对话（冗余），要么写固定密度的摘要。关键信息和背景细节占用相同token空间并不'
+  content_length: 812
+  image_count: 7
+  source_id: '2601.21468'
   success: true
 database_stats:
   last_updated: '2026-02-02 14:39:09'

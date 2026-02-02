@@ -1,7 +1,7 @@
 metadata:
-  last_updated: '2026-02-02 05:42:57'
-  total_posts: 8
-  success_count: 8
+  last_updated: '2026-02-02 06:42:48'
+  total_posts: 9
+  success_count: 9
 posts:
 - created_at: '2026-02-01 22:52:10'
   post_type: arxiv
@@ -102,6 +102,19 @@ posts:
   content_length: 802
   image_count: 7
   source_id: '2601.17124'
+  success: true
+- created_at: '2026-02-02 06:42:48'
+  post_type: arxiv
+  title: '弹性注意力🔥推理时自适应稀疏率，Transform
+
+
+    ## 注意力也能“弹性伸缩”？推理速度暴涨的秘密武器来了！
+
+
+    Transformer模型处理长文本时，计算量爆炸是老大难问题。传统方法要么全用稀疏'
+  content_length: 549
+  image_count: 7
+  source_id: '2601.17367'
   success: true
 database_stats:
   last_updated: '2026-02-02 06:35:32'

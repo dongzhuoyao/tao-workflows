@@ -1,7 +1,7 @@
 metadata:
-  last_updated: '2026-02-02 08:42:50'
-  total_posts: 11
-  success_count: 11
+  last_updated: '2026-02-02 09:43:27'
+  total_posts: 12
+  success_count: 12
 posts:
 - created_at: '2026-02-01 22:52:10'
   post_type: arxiv
@@ -138,6 +138,19 @@ posts:
   content_length: 906
   image_count: 7
   source_id: '2601.19092'
+  success: true
+- created_at: '2026-02-02 09:43:27'
+  post_type: arxiv
+  title: '🔥时空学习让角色动起来！
+
+
+    动画界新王炸！DreamActor-M2：一个模型通吃所有角色，效果太顶了🔥
+
+
+    还在为给不同角色做动画而头疼吗？字节跳动最新推出的 DreamActor-M2 彻底解决了这'
+  content_length: 890
+  image_count: 7
+  source_id: '2601.21716'
   success: true
 database_stats:
   last_updated: '2026-02-02 09:36:55'

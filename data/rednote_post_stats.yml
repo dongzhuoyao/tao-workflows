@@ -1,7 +1,7 @@
 metadata:
-  last_updated: '2026-02-02 19:42:54'
-  total_posts: 21
-  success_count: 21
+  last_updated: '2026-02-02 20:43:08'
+  total_posts: 22
+  success_count: 22
 posts:
 - created_at: '2026-02-01 22:52:10'
   post_type: arxiv
@@ -264,6 +264,19 @@ posts:
   content_length: 910
   image_count: 7
   source_id: '2601.22491'
+  success: true
+- created_at: '2026-02-02 20:43:08'
+  post_type: arxiv
+  title: '🔥测试时课程合成：AI自我进化新突破！
+
+
+    ## 模型自己出题考自己？这波操作让推理能力暴涨！
+
+
+    还在为LLM做难题时瞎猜而头疼吗？传统测试时训练（TTRL）直接拿超难的考题来练，结果模型连答案都蒙不对'
+  content_length: 559
+  image_count: 7
+  source_id: '2601.22628'
   success: true
 database_stats:
   last_updated: '2026-02-02 20:41:59'

@@ -1,7 +1,7 @@
 metadata:
-  last_updated: '2026-02-02 12:42:51'
-  total_posts: 15
-  success_count: 15
+  last_updated: '2026-02-02 13:43:24'
+  total_posts: 16
+  success_count: 16
 posts:
 - created_at: '2026-02-01 22:52:10'
   post_type: arxiv
@@ -189,6 +189,19 @@ posts:
   content_length: 810
   image_count: 7
   source_id: '2601.23182'
+  success: true
+- created_at: '2026-02-02 13:43:24'
+  post_type: arxiv
+  title: 'AI画图神器🔥科研绘图效率暴涨3倍！
+
+
+    ## 科研画图太费时？AI帮你一键生成顶会级图表！🚀
+
+
+    还在为论文配图熬夜肝PPT吗？PaperBanana来了！这个由Google和北大联合推出的AI框架，能'
+  content_length: 584
+  image_count: 12
+  source_id: '2601.23265'
   success: true
 database_stats:
   last_updated: '2026-02-02 13:38:43'

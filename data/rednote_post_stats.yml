@@ -1,7 +1,7 @@
 metadata:
-  last_updated: '2026-02-02 03:43:16'
-  total_posts: 6
-  success_count: 6
+  last_updated: '2026-02-02 04:42:54'
+  total_posts: 7
+  success_count: 7
 posts:
 - created_at: '2026-02-01 22:52:10'
   post_type: arxiv
@@ -75,6 +75,16 @@ posts:
   content_length: 750
   image_count: 7
   source_id: '2601.18577'
+  success: true
+- created_at: '2026-02-02 04:42:54'
+  post_type: arxiv
+  title: 'AI规划大突破！长程约束验证新基准🔥
+
+
+    阿里团队推出新基准DeepPlanning，专攻“长视野智能体规划”，模拟人类复杂决策。它要求AI完成如策划跨国旅行或凑齐整套商品等任务，需主动搜集信息、处理局'
+  content_length: 573
+  image_count: 7
+  source_id: '2601.18137'
   success: true
 database_stats:
   last_updated: '2026-02-02 04:34:38'

@@ -1,7 +1,7 @@
 metadata:
-  last_updated: '2026-02-02 02:42:55'
-  total_posts: 5
-  success_count: 5
+  last_updated: '2026-02-02 03:43:16'
+  total_posts: 6
+  success_count: 6
 posts:
 - created_at: '2026-02-01 22:52:10'
   post_type: arxiv
@@ -62,6 +62,19 @@ posts:
   content_length: 850
   image_count: 7
   source_id: '2601.17895'
+  success: true
+- created_at: '2026-02-02 03:43:16'
+  post_type: arxiv
+  title: '视频采样大升级！AI学会自我优化🔥
+
+
+    视频生成模型常因物理模拟不真实、运动不连贯而受限。传统方法依赖外部模型筛选或重新训练，效率低且成本高。
+
+
+    这篇论文提出了一种新思路：让模型在推理时自我优化！无需额'
+  content_length: 750
+  image_count: 7
+  source_id: '2601.18577'
   success: true
 database_stats:
   last_updated: '2026-02-02 03:34:12'

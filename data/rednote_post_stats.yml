@@ -1,7 +1,7 @@
 metadata:
-  last_updated: '2026-02-02 10:42:40'
-  total_posts: 13
-  success_count: 13
+  last_updated: '2026-02-02 11:43:02'
+  total_posts: 14
+  success_count: 14
 posts:
 - created_at: '2026-02-01 22:52:10'
   post_type: arxiv
@@ -166,6 +166,16 @@ posts:
   content_length: 883
   image_count: 7
   source_id: '2601.22636'
+  success: true
+- created_at: '2026-02-02 11:43:02'
+  post_type: arxiv
+  title: '🔥逻辑验证让推理暴涨3倍！
+
+
+    大语言模型在数学和逻辑推理上表现惊艳，但其生成过程本质上是概率性的。这导致了一个致命问题：即使最终答案正确，中间推理步骤也可能充满逻辑漏洞！研究发现，高达39.3%的正确'
+  content_length: 690
+  image_count: 7
+  source_id: '2601.22642'
   success: true
 database_stats:
   last_updated: '2026-02-02 11:37:49'

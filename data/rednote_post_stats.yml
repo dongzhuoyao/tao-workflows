@@ -1,7 +1,7 @@
 metadata:
-  last_updated: '2026-02-02 21:43:04'
-  total_posts: 23
-  success_count: 23
+  last_updated: '2026-02-02 22:43:44'
+  total_posts: 24
+  success_count: 24
 posts:
 - created_at: '2026-02-01 22:52:10'
   post_type: arxiv
@@ -290,6 +290,19 @@ posts:
   content_length: 932
   image_count: 7
   source_id: '2601.23143'
+  success: true
+- created_at: '2026-02-02 22:43:44'
+  post_type: arxiv
+  title: '思维语言竟让AI输出暴涨3倍！🔥
+
+
+    你有没有发现，同一个问题问ChatGPT，回答总是大同小异？这就是“模式崩溃”。传统方法靠调高温度增加随机性，但效果有限。
+
+
+    研究发现了一个秘密：改变大模型“思考时'
+  content_length: 849
+  image_count: 7
+  source_id: '2601.11227'
   success: true
 database_stats:
   last_updated: '2026-02-02 22:43:09'

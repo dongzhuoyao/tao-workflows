@@ -45,16 +45,6 @@ jobs:
     last_run: '2026-02-02 16:34:10'
     last_result: success
     next_run: '2026-02-03 00:31:00'
-  health:
-    name: Health Check
-    label: com.antsbot.health
-    schedule: Unknown
-    loaded: false
-    exit_status: null
-    process_ok: false
-    last_run: null
-    last_result: no_log
-    next_run: null
   db_stats:
     name: Database Stats
     label: com.antsbot.db-stats

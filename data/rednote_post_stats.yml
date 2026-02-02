@@ -1,7 +1,7 @@
 metadata:
-  last_updated: '2026-02-02 06:42:48'
-  total_posts: 9
-  success_count: 9
+  last_updated: '2026-02-02 07:43:05'
+  total_posts: 10
+  success_count: 10
 posts:
 - created_at: '2026-02-01 22:52:10'
   post_type: arxiv
@@ -115,6 +115,16 @@ posts:
   content_length: 549
   image_count: 7
   source_id: '2601.17367'
+  success: true
+- created_at: '2026-02-02 07:43:05'
+  post_type: arxiv
+  title: '像素级VLM感知！点预测竟如此简单🔥
+
+
+    传统多模态大模型（MLLM）在像素级分割任务上通常表现不佳。但研究发现，标准MLLM架构本身就具备强大的底层视觉感知潜力。无需复杂设计，只需让模型像生成文字一样'
+  content_length: 705
+  image_count: 7
+  source_id: '2601.19228'
   success: true
 database_stats:
   last_updated: '2026-02-02 07:35:59'

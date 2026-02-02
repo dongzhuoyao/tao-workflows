@@ -1,9 +1,9 @@
 metadata:
-  last_updated: '2026-02-02 18:21:51'
+  last_updated: '2026-02-02 18:23:05'
   machine: macbook
   total_jobs: 6
   process_ok_count: 6
-  last_success_count: 1
+  last_success_count: 2
 jobs:
   tgnews:
     name: Telegram News
@@ -23,7 +23,7 @@ jobs:
     exit_status: '0'
     process_ok: true
     last_run: '2026-02-02 17:42:42'
-    last_result: failed
+    last_result: success
     next_run: '2026-02-02 18:41:00'
   rednote_stats:
     name: RedNote Stats
@@ -33,7 +33,7 @@ jobs:
     exit_status: '0'
     process_ok: true
     last_run: '2026-02-01 23:30:16'
-    last_result: failed
+    last_result: unknown
     next_run: '2026-02-02 23:30:00'
   trending:
     name: Trending Papers
@@ -45,16 +45,6 @@ jobs:
     last_run: '2026-02-02 16:34:10'
     last_result: success
     next_run: '2026-02-03 00:31:00'
-  db_stats:
-    name: Database Stats
-    label: com.antsbot.db-stats
-    schedule: Every 10m
-    loaded: true
-    exit_status: '0'
-    process_ok: true
-    last_run: '2026-02-02 18:20:50'
-    last_result: unknown
-    next_run: '2026-02-02 18:30:50'
   rednote_post_stats:
     name: RedNote Post Stats
     label: com.antsbot.rednote-post-stats
@@ -65,3 +55,13 @@ jobs:
     last_run: '2026-02-02 18:00:28'
     last_result: unknown
     next_run: '2026-02-03 06:00:00'
+  db_stats:
+    name: Database Stats
+    label: com.antsbot.db-stats
+    schedule: Every 10m
+    loaded: true
+    exit_status: '0'
+    process_ok: true
+    last_run: '2026-02-02 18:20:50'
+    last_result: unknown
+    next_run: '2026-02-02 18:30:50'

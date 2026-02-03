@@ -1,7 +1,7 @@
 metadata:
-  last_updated: '2026-02-03 04:43:21'
-  total_posts: 29
-  success_count: 29
+  last_updated: '2026-02-03 05:42:58'
+  total_posts: 30
+  success_count: 30
 posts:
 - created_at: '2026-02-01 22:52:10'
   post_type: arxiv
@@ -365,6 +365,19 @@ posts:
   content_length: 760
   image_count: 7
   source_id: '2601.21192'
+  success: true
+- created_at: '2026-02-03 05:42:58'
+  post_type: arxiv
+  title: '🔥LLM预训练精度暴涨！NVFP4梯度估计大突破
+
+
+    ## 性能暴涨4.2倍！NVFP4预训练精度首次追平FP16的秘密武器 🔥
+
+
+    大模型预训练成本高到离谱？NVIDIA新一代Blackwell GPU'
+  content_length: 756
+  image_count: 7
+  source_id: '2601.22813'
   success: true
 database_stats:
   last_updated: '2026-02-03 05:37:32'

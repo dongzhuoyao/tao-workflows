@@ -354,13 +354,13 @@ posts:
   source_id: '2601.01576'
   success: true
 database_stats:
-  last_updated: '2026-02-03 03:56:41'
+  last_updated: '2026-02-03 04:06:48'
   tweets:
     total: 2410
     unpublished: 0
   arxiv:
-    total: 2114
-    unpublished: 1967
+    total: 2216
+    unpublished: 2069
   projects:
     total: 2
     unpublished: 0

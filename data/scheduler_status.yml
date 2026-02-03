@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-02-03 00:33:56'
+  last_updated: '2026-02-03 08:34:02'
   machine: macbook
   total_jobs: 6
   process_ok_count: 5
@@ -12,9 +12,9 @@ jobs:
     loaded: true
     exit_status: '0'
     process_ok: true
-    last_run: '2026-02-03 00:11:21'
+    last_run: '2026-02-03 08:11:37'
     last_result: unknown
-    next_run: '2026-02-03 02:11:00'
+    next_run: '2026-02-03 10:11:00'
   rednote:
     name: RedNote Post
     label: com.antsbot.rednote
@@ -22,9 +22,9 @@ jobs:
     loaded: true
     exit_status: '0'
     process_ok: true
-    last_run: '2026-02-02 23:43:32'
+    last_run: '2026-02-03 07:42:21'
     last_result: failed
-    next_run: '2026-02-03 00:41:00'
+    next_run: '2026-02-03 08:41:00'
   rednote_stats:
     name: RedNote Stats
     label: com.antsbot.rednote-stats
@@ -42,9 +42,9 @@ jobs:
     loaded: true
     exit_status: '0'
     process_ok: true
-    last_run: '2026-02-03 00:33:50'
+    last_run: '2026-02-03 08:33:58'
     last_result: unknown
-    next_run: '2026-02-03 08:31:00'
+    next_run: '2026-02-03 16:31:00'
   rednote_post_stats:
     name: RedNote Post Stats
     label: com.antsbot.rednote-post-stats
@@ -62,9 +62,9 @@ jobs:
     loaded: true
     exit_status: '0'
     process_ok: true
-    last_run: '2026-02-03 00:24:45'
+    last_run: '2026-02-03 08:28:58'
     last_result: unknown
-    next_run: '2026-02-03 00:34:45'
+    next_run: '2026-02-03 08:38:58'
   health:
     name: Health Check
     label: com.antsbot.health

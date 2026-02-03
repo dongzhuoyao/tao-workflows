@@ -1,7 +1,7 @@
 metadata:
-  last_updated: '2026-02-03 00:43:21'
-  total_posts: 26
-  success_count: 26
+  last_updated: '2026-02-03 01:43:18'
+  total_posts: 27
+  success_count: 27
 posts:
 - created_at: '2026-02-01 22:52:10'
   post_type: arxiv
@@ -326,6 +326,19 @@ posts:
   content_length: 697
   image_count: 7
   source_id: '2601.08602'
+  success: true
+- created_at: '2026-02-03 01:43:18'
+  post_type: arxiv
+  title: '🔥里程碑比结果更重要！解锁几何推理新方法
+
+
+    多模态大语言模型在复杂几何题上表现不佳，问题常源于传统“只看结果”的训练方式。这导致模型可能蒙对答案得分，而严谨推导中的小失误却被全盘否定。
+
+
+    论文提出了颠'
+  content_length: 863
+  image_count: 7
+  source_id: '2601.05073'
   success: true
 database_stats:
   last_updated: '2026-02-03 01:35:28'

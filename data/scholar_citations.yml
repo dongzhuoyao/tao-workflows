@@ -1,7 +1,7 @@
 metadata:
-  last_updated: '2026-01-30'
+  last_updated: '2026-02-04'
   scholar_id: EchdyZEAAAAJ
-  total_citations: 1285
+  total_citations: 1295
   paper_count: 37
 papers:
   Zph67rFs4hoC:
@@ -11,7 +11,7 @@ papers:
   r0BpntZqJG4C:
     title: 'ZigMa: A DiT-style Zigzag Mamba Diffusion Model'
     year: '2024'
-    citations: 189
+    citations: 197
   Se3iqnhoufwC:
     title: Attention-based multi-context guiding for few-shot semantic segmentation
     year: '2019'
@@ -19,7 +19,7 @@ papers:
   ns9cj8rnVeAC:
     title: 'DepthFM: Fast Generative Monocular Depth Estimation with Flow Matching'
     year: '2025'
-    citations: 105
+    citations: 108
   MXK_kJrjxJIC:
     title: Localizing the Common Action Among a Few Videos
     year: '2020'
@@ -31,7 +31,7 @@ papers:
   R3hNpaxXUhUC:
     title: Self-guided diffusion models
     year: '2023'
-    citations: 56
+    citations: 55
   TFP_iSt0sucC:
     title: 'Diffusion Models and Representation Learning: A Survey'
     year: '2024'

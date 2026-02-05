@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-02-05 23:30:14'
+  last_updated: '2026-02-06 00:34:08'
   machine: macbook
   total_jobs: 6
   process_ok_count: 5
@@ -12,9 +12,9 @@ jobs:
     loaded: true
     exit_status: '0'
     process_ok: true
-    last_run: '2026-02-05 22:11:20'
+    last_run: '2026-02-06 00:11:16'
     last_result: unknown
-    next_run: '2026-02-06 00:11:00'
+    next_run: '2026-02-06 02:11:00'
   rednote:
     name: RedNote Post
     label: com.antsbot.rednote
@@ -22,9 +22,9 @@ jobs:
     loaded: true
     exit_status: '0'
     process_ok: true
-    last_run: '2026-02-05 22:41:11'
+    last_run: '2026-02-05 23:41:09'
     last_result: failed
-    next_run: '2026-02-05 23:41:00'
+    next_run: '2026-02-06 00:41:00'
   rednote_stats:
     name: RedNote Stats
     label: com.antsbot.rednote-stats
@@ -32,8 +32,8 @@ jobs:
     loaded: true
     exit_status: '0'
     process_ok: true
-    last_run: '2026-02-04 23:30:15'
-    last_result: failed
+    last_run: null
+    last_result: unknown
     next_run: '2026-02-06 23:30:00'
   trending:
     name: Trending Papers
@@ -42,9 +42,9 @@ jobs:
     loaded: true
     exit_status: '0'
     process_ok: true
-    last_run: '2026-02-05 16:33:54'
-    last_result: failed
-    next_run: '2026-02-06 00:31:00'
+    last_run: '2026-02-06 00:31:08'
+    last_result: unknown
+    next_run: '2026-02-06 08:31:00'
   rednote_post_stats:
     name: RedNote Post Stats
     label: com.antsbot.rednote-post-stats
@@ -62,9 +62,9 @@ jobs:
     loaded: true
     exit_status: '0'
     process_ok: true
-    last_run: '2026-02-05 23:26:56'
+    last_run: '2026-02-06 00:27:27'
     last_result: unknown
-    next_run: '2026-02-05 23:36:56'
+    next_run: '2026-02-06 00:37:27'
   health:
     name: Health Check
     label: com.antsbot.health

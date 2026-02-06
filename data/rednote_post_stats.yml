@@ -452,7 +452,7 @@ posts:
   source_id: '2602.02437'
   success: true
 database_stats:
-  last_updated: '2026-02-06 17:39:38'
+  last_updated: '2026-02-06 17:49:43'
   tweets:
     total: 2416
     unpublished: 2406
@@ -466,5 +466,5 @@ database_stats:
     total: 1
     unpublished: 0
   linkedin:
-    total: 0
+    total: 1
     unpublished: 0

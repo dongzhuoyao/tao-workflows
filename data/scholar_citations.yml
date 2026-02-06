@@ -1,7 +1,7 @@
 metadata:
-  last_updated: '2026-02-04'
+  last_updated: '2026-02-06'
   scholar_id: EchdyZEAAAAJ
-  total_citations: 1295
+  total_citations: 1296
   paper_count: 37
 papers:
   Zph67rFs4hoC:
@@ -19,7 +19,7 @@ papers:
   ns9cj8rnVeAC:
     title: 'DepthFM: Fast Generative Monocular Depth Estimation with Flow Matching'
     year: '2025'
-    citations: 108
+    citations: 109
   MXK_kJrjxJIC:
     title: Localizing the Common Action Among a Few Videos
     year: '2020'

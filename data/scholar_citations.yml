@@ -1,7 +1,7 @@
 metadata:
-  last_updated: '2026-02-06'
+  last_updated: '2026-02-07'
   scholar_id: EchdyZEAAAAJ
-  total_citations: 1296
+  total_citations: 1302
   paper_count: 37
 papers:
   Zph67rFs4hoC:
@@ -15,11 +15,11 @@ papers:
   Se3iqnhoufwC:
     title: Attention-based multi-context guiding for few-shot semantic segmentation
     year: '2019'
-    citations: 177
+    citations: 178
   ns9cj8rnVeAC:
     title: 'DepthFM: Fast Generative Monocular Depth Estimation with Flow Matching'
     year: '2025'
-    citations: 109
+    citations: 111
   MXK_kJrjxJIC:
     title: Localizing the Common Action Among a Few Videos
     year: '2020'
@@ -35,7 +35,7 @@ papers:
   TFP_iSt0sucC:
     title: 'Diffusion Models and Representation Learning: A Survey'
     year: '2024'
-    citations: 45
+    citations: 44
   mVmsd5A6BfQC:
     title: Latent space editing in transformer-based flow matching
     year: '2023'
@@ -43,7 +43,7 @@ papers:
   BqipwSGYUEgC:
     title: Boosting latent diffusion with flow matching
     year: '2023'
-    citations: 37
+    citations: 38
   M3ejUd6NZC8C:
     title: Accelerating Convolutional Neural Networks with Dynamic Channel Pruning.
     year: '2019'
@@ -51,7 +51,7 @@ papers:
   -f6ydRqryjwC:
     title: Motion Flow Matching for Human Motion Synthesis and Editing
     year: '2023'
-    citations: 32
+    citations: 31
   iH-uZ7U-co4C:
     title: Continuous, Subject-Specific Attribute Control in T2I Models by Identifying Semantic Directions
     year: '2024'
@@ -64,18 +64,26 @@ papers:
     title: Self-supervised Video Representation Learning with Cross-Stream Prototypical Contrasting
     year: '2021'
     citations: 20
+  k_IJM867U9cC:
+    title: 'Retinex-Diffusion: On Controlling Illumination Conditions in Diffusion Models via Retinex Theory'
+    year: '2025'
+    citations: 13
   qxL8FJ1GzNcC:
     title: Sobel heuristic kernel for aerial semantic segmentation
     year: '2018'
     citations: 13
-  k_IJM867U9cC:
-    title: 'Retinex-Diffusion: On Controlling Illumination Conditions in Diffusion Models via Retinex Theory'
-    year: '2025'
-    citations: 12
   TQgYirikUcIC:
     title: Training Class-Imbalanced Diffusion Model Via Overlap Optimization
     year: '2024'
     citations: 11
+  RYcK_YlVTxYC:
+    title: Can Prompt Difficulty be Online Predicted for Accelerating RL Finetuning of Reasoning Models?
+    year: '2025'
+    citations: 9
+  YFjsv_pBGBYC:
+    title: 'MaskFlow: Discrete Flows For Flexible and Efficient Long Video Generation'
+    year: '2025'
+    citations: 9
   maZDTaKrznsC:
     title: Distillation of Diffusion Features for Semantic Correspondence
     year: '2024'
@@ -84,18 +92,14 @@ papers:
     title: Guided Diffusion from Self-Supervised Diffusion Features
     year: '2023'
     citations: 9
-  RYcK_YlVTxYC:
-    title: Can Prompt Difficulty be Online Predicted for Accelerating RL Finetuning of Reasoning Models?
-    year: '2025'
-    citations: 8
-  YFjsv_pBGBYC:
-    title: 'MaskFlow: Discrete Flows For Flexible and Efficient Long Video Generation'
-    year: '2025'
-    citations: 8
   5nxA0vEk-isC:
     title: Interactivity Proposals for Surveillance Videos
     year: '2020'
     citations: 7
+  hMod-77fHWUC:
+    title: 'TREAD: Token Routing for Efficient Architecture-agnostic Diffusion Training'
+    year: '2025'
+    citations: 6
   ZeXyd9-uunAC:
     title: Generative Data Augmentation Improves Scribble-supervised Semantic Segmentation
     year: '2023'
@@ -104,10 +108,6 @@ papers:
     title: 'ScribbleGen: Generative Data Augmentation Improves Scribble-supervised Semantic Segmentation'
     year: Unknown
     citations: 6
-  hMod-77fHWUC:
-    title: 'TREAD: Token Routing for Efficient Architecture-agnostic Diffusion Training'
-    year: '2025'
-    citations: 5
   ufrVoPGSRksC:
     title: 'Dense In Dense: Training Segmentation from Scratch'
     year: '2019'

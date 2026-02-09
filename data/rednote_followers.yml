@@ -1,8 +1,8 @@
 metadata:
-  last_updated: '2026-02-08'
+  last_updated: '2026-02-09'
   source: rednote_creator_dashboard
-  total_days: 14
-  latest_followers: 5069
+  total_days: 15
+  latest_followers: 5071
   latest_likes: 95000
 history:
   '2026-01-24':
@@ -46,4 +46,7 @@ history:
     likes: 94000
   '2026-02-08':
     followers: 5069
+    likes: 95000
+  '2026-02-09':
+    followers: 5071
     likes: 95000

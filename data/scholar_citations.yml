@@ -1,7 +1,7 @@
 metadata:
-  last_updated: '2026-02-17'
+  last_updated: '2026-02-21'
   scholar_id: EchdyZEAAAAJ
-  total_citations: 1331
+  total_citations: 1340
   paper_count: 37
 papers:
   Zph67rFs4hoC:
@@ -11,7 +11,7 @@ papers:
   r0BpntZqJG4C:
     title: 'ZigMa: A DiT-style Zigzag Mamba Diffusion Model'
     year: '2024'
-    citations: 204
+    citations: 205
   Se3iqnhoufwC:
     title: Attention-based multi-context guiding for few-shot semantic segmentation
     year: '2019'
@@ -19,7 +19,7 @@ papers:
   ns9cj8rnVeAC:
     title: 'DepthFM: Fast Generative Monocular Depth Estimation with Flow Matching'
     year: '2025'
-    citations: 117
+    citations: 120
   MXK_kJrjxJIC:
     title: Localizing the Common Action Among a Few Videos
     year: '2020'
@@ -28,14 +28,14 @@ papers:
     title: 'Silco: Show a few images, localize the common object'
     year: '2019'
     citations: 60
-  R3hNpaxXUhUC:
-    title: Self-guided diffusion models
-    year: '2023'
-    citations: 52
   TFP_iSt0sucC:
     title: 'Diffusion Models and Representation Learning: A Survey'
     year: '2024'
-    citations: 51
+    citations: 53
+  R3hNpaxXUhUC:
+    title: Self-guided diffusion models
+    year: '2023'
+    citations: 53
   BqipwSGYUEgC:
     title: Boosting latent diffusion with flow matching
     year: '2023'
@@ -59,7 +59,7 @@ papers:
   e5wmG9Sq2KIC:
     title: Flow Matching for Conditional Text Generation in a Few Sampling Steps
     year: '2024'
-    citations: 27
+    citations: 28
   ULOm3_A8WrAC:
     title: Self-supervised Video Representation Learning with Cross-Stream Prototypical Contrasting
     year: '2021'
@@ -72,6 +72,10 @@ papers:
     title: 'ScribbleGen: Generative Data Augmentation Improves Scribble-supervised Semantic Segmentation'
     year: Unknown
     citations: 12
+  RYcK_YlVTxYC:
+    title: Can Prompt Difficulty be Online Predicted for Accelerating RL Finetuning of Reasoning Models?
+    year: '2025'
+    citations: 11
   k_IJM867U9cC:
     title: 'Retinex-Diffusion: On Controlling Illumination Conditions in Diffusion Models via Retinex Theory'
     year: '2025'
@@ -80,10 +84,6 @@ papers:
     title: Training Class-Imbalanced Diffusion Model Via Overlap Optimization
     year: '2024'
     citations: 11
-  RYcK_YlVTxYC:
-    title: Can Prompt Difficulty be Online Predicted for Accelerating RL Finetuning of Reasoning Models?
-    year: '2025'
-    citations: 10
   maZDTaKrznsC:
     title: Distillation of Diffusion Features for Semantic Correspondence
     year: '2024'

@@ -1,7 +1,7 @@
 metadata:
-  last_updated: '2026-02-23'
+  last_updated: '2026-02-25'
   scholar_id: EchdyZEAAAAJ
-  total_citations: 1340
+  total_citations: 1347
   paper_count: 37
 papers:
   Zph67rFs4hoC:
@@ -19,7 +19,7 @@ papers:
   ns9cj8rnVeAC:
     title: 'DepthFM: Fast Generative Monocular Depth Estimation with Flow Matching'
     year: '2025'
-    citations: 120
+    citations: 121
   MXK_kJrjxJIC:
     title: Localizing the Common Action Among a Few Videos
     year: '2020'
@@ -39,7 +39,7 @@ papers:
   BqipwSGYUEgC:
     title: Boosting latent diffusion with flow matching
     year: '2023'
-    citations: 40
+    citations: 41
   mVmsd5A6BfQC:
     title: Latent space editing in transformer-based flow matching
     year: '2023'
@@ -51,15 +51,15 @@ papers:
   -f6ydRqryjwC:
     title: Motion Flow Matching for Human Motion Synthesis and Editing
     year: '2023'
-    citations: 31
+    citations: 33
   iH-uZ7U-co4C:
     title: Continuous, Subject-Specific Attribute Control in T2I Models by Identifying Semantic Directions
     year: '2024'
-    citations: 28
+    citations: 30
   e5wmG9Sq2KIC:
     title: Flow Matching for Conditional Text Generation in a Few Sampling Steps
     year: '2024'
-    citations: 28
+    citations: 29
   ULOm3_A8WrAC:
     title: Self-supervised Video Representation Learning with Cross-Stream Prototypical Contrasting
     year: '2021'

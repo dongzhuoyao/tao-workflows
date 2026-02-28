@@ -1,7 +1,7 @@
 metadata:
-  last_updated: '2026-02-25'
+  last_updated: '2026-02-28'
   scholar_id: EchdyZEAAAAJ
-  total_citations: 1347
+  total_citations: 1355
   paper_count: 37
 papers:
   Zph67rFs4hoC:
@@ -11,7 +11,7 @@ papers:
   r0BpntZqJG4C:
     title: 'ZigMa: A DiT-style Zigzag Mamba Diffusion Model'
     year: '2024'
-    citations: 205
+    citations: 207
   Se3iqnhoufwC:
     title: Attention-based multi-context guiding for few-shot semantic segmentation
     year: '2019'
@@ -19,7 +19,7 @@ papers:
   ns9cj8rnVeAC:
     title: 'DepthFM: Fast Generative Monocular Depth Estimation with Flow Matching'
     year: '2025'
-    citations: 121
+    citations: 123
   MXK_kJrjxJIC:
     title: Localizing the Common Action Among a Few Videos
     year: '2020'
@@ -31,11 +31,11 @@ papers:
   TFP_iSt0sucC:
     title: 'Diffusion Models and Representation Learning: A Survey'
     year: '2024'
-    citations: 53
+    citations: 54
   R3hNpaxXUhUC:
     title: Self-guided diffusion models
     year: '2023'
-    citations: 53
+    citations: 54
   BqipwSGYUEgC:
     title: Boosting latent diffusion with flow matching
     year: '2023'
@@ -67,7 +67,11 @@ papers:
   qxL8FJ1GzNcC:
     title: Sobel heuristic kernel for aerial semantic segmentation
     year: '2018'
-    citations: 13
+    citations: 14
+  TQgYirikUcIC:
+    title: Training Class-Imbalanced Diffusion Model Via Overlap Optimization
+    year: '2024'
+    citations: 12
   bEWYMUwI8FkC:
     title: 'ScribbleGen: Generative Data Augmentation Improves Scribble-supervised Semantic Segmentation'
     year: Unknown
@@ -79,10 +83,6 @@ papers:
   k_IJM867U9cC:
     title: 'Retinex-Diffusion: On Controlling Illumination Conditions in Diffusion Models via Retinex Theory'
     year: '2025'
-    citations: 11
-  TQgYirikUcIC:
-    title: Training Class-Imbalanced Diffusion Model Via Overlap Optimization
-    year: '2024'
     citations: 11
   maZDTaKrznsC:
     title: Distillation of Diffusion Features for Semantic Correspondence

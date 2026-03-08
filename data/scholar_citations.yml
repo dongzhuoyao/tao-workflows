@@ -1,25 +1,25 @@
 metadata:
-  last_updated: '2026-02-28'
+  last_updated: '2026-03-08'
   scholar_id: EchdyZEAAAAJ
-  total_citations: 1355
+  total_citations: 1375
   paper_count: 37
 papers:
   Zph67rFs4hoC:
     title: 'Pointmixup: Augmentation for point clouds'
     year: '2020'
-    citations: 247
+    citations: 248
   r0BpntZqJG4C:
     title: 'ZigMa: A DiT-style Zigzag Mamba Diffusion Model'
     year: '2024'
-    citations: 207
+    citations: 211
   Se3iqnhoufwC:
     title: Attention-based multi-context guiding for few-shot semantic segmentation
     year: '2019'
-    citations: 179
+    citations: 180
   ns9cj8rnVeAC:
     title: 'DepthFM: Fast Generative Monocular Depth Estimation with Flow Matching'
     year: '2025'
-    citations: 123
+    citations: 126
   MXK_kJrjxJIC:
     title: Localizing the Common Action Among a Few Videos
     year: '2020'
@@ -31,7 +31,7 @@ papers:
   TFP_iSt0sucC:
     title: 'Diffusion Models and Representation Learning: A Survey'
     year: '2024'
-    citations: 54
+    citations: 56
   R3hNpaxXUhUC:
     title: Self-guided diffusion models
     year: '2023'
@@ -39,19 +39,19 @@ papers:
   BqipwSGYUEgC:
     title: Boosting latent diffusion with flow matching
     year: '2023'
-    citations: 41
+    citations: 42
   mVmsd5A6BfQC:
     title: Latent space editing in transformer-based flow matching
     year: '2023'
-    citations: 38
-  M3ejUd6NZC8C:
-    title: Accelerating Convolutional Neural Networks with Dynamic Channel Pruning.
-    year: '2019'
-    citations: 34
+    citations: 40
   -f6ydRqryjwC:
     title: Motion Flow Matching for Human Motion Synthesis and Editing
     year: '2023'
-    citations: 33
+    citations: 35
+  M3ejUd6NZC8C:
+    title: Accelerating Convolutional Neural Networks with Dynamic Channel Pruning.
+    year: '2019'
+    citations: 35
   iH-uZ7U-co4C:
     title: Continuous, Subject-Specific Attribute Control in T2I Models by Identifying Semantic Directions
     year: '2024'
@@ -59,7 +59,7 @@ papers:
   e5wmG9Sq2KIC:
     title: Flow Matching for Conditional Text Generation in a Few Sampling Steps
     year: '2024'
-    citations: 29
+    citations: 30
   ULOm3_A8WrAC:
     title: Self-supervised Video Representation Learning with Cross-Stream Prototypical Contrasting
     year: '2021'
@@ -68,6 +68,10 @@ papers:
     title: Sobel heuristic kernel for aerial semantic segmentation
     year: '2018'
     citations: 14
+  k_IJM867U9cC:
+    title: 'Retinex-Diffusion: On Controlling Illumination Conditions in Diffusion Models via Retinex Theory'
+    year: '2025'
+    citations: 12
   TQgYirikUcIC:
     title: Training Class-Imbalanced Diffusion Model Via Overlap Optimization
     year: '2024'
@@ -80,10 +84,10 @@ papers:
     title: Can Prompt Difficulty be Online Predicted for Accelerating RL Finetuning of Reasoning Models?
     year: '2025'
     citations: 11
-  k_IJM867U9cC:
-    title: 'Retinex-Diffusion: On Controlling Illumination Conditions in Diffusion Models via Retinex Theory'
+  YFjsv_pBGBYC:
+    title: 'MaskFlow: Discrete Flows For Flexible and Efficient Long Video Generation'
     year: '2025'
-    citations: 11
+    citations: 10
   maZDTaKrznsC:
     title: Distillation of Diffusion Features for Semantic Correspondence
     year: '2024'
@@ -92,10 +96,6 @@ papers:
     title: Guided Diffusion from Self-Supervised Diffusion Features
     year: '2023'
     citations: 10
-  YFjsv_pBGBYC:
-    title: 'MaskFlow: Discrete Flows For Flexible and Efficient Long Video Generation'
-    year: '2025'
-    citations: 9
   5nxA0vEk-isC:
     title: Interactivity Proposals for Surveillance Videos
     year: '2020'

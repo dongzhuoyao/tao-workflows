@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-03-08'
+  last_updated: '2026-03-09'
   scholar_id: EchdyZEAAAAJ
   total_citations: 1375
   paper_count: 37
@@ -31,7 +31,7 @@ papers:
   TFP_iSt0sucC:
     title: 'Diffusion Models and Representation Learning: A Survey'
     year: '2024'
-    citations: 56
+    citations: 55
   R3hNpaxXUhUC:
     title: Self-guided diffusion models
     year: '2023'
@@ -43,7 +43,7 @@ papers:
   mVmsd5A6BfQC:
     title: Latent space editing in transformer-based flow matching
     year: '2023'
-    citations: 40
+    citations: 41
   -f6ydRqryjwC:
     title: Motion Flow Matching for Human Motion Synthesis and Editing
     year: '2023'

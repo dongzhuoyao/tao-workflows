@@ -1,7 +1,7 @@
 metadata:
-  last_updated: '2026-03-13'
+  last_updated: '2026-03-15'
   scholar_id: EchdyZEAAAAJ
-  total_citations: 1379
+  total_citations: 1383
   paper_count: 37
 papers:
   Zph67rFs4hoC:
@@ -11,7 +11,7 @@ papers:
   r0BpntZqJG4C:
     title: 'ZigMa: A DiT-style Zigzag Mamba Diffusion Model'
     year: '2024'
-    citations: 212
+    citations: 213
   Se3iqnhoufwC:
     title: Attention-based multi-context guiding for few-shot semantic segmentation
     year: '2019'
@@ -19,7 +19,7 @@ papers:
   ns9cj8rnVeAC:
     title: 'DepthFM: Fast Generative Monocular Depth Estimation with Flow Matching'
     year: '2025'
-    citations: 127
+    citations: 128
   MXK_kJrjxJIC:
     title: Localizing the Common Action Among a Few Videos
     year: '2020'
@@ -31,7 +31,7 @@ papers:
   TFP_iSt0sucC:
     title: 'Diffusion Models and Representation Learning: A Survey'
     year: '2024'
-    citations: 55
+    citations: 56
   R3hNpaxXUhUC:
     title: Self-guided diffusion models
     year: '2023'
@@ -68,6 +68,10 @@ papers:
     title: Sobel heuristic kernel for aerial semantic segmentation
     year: '2018'
     citations: 14
+  RYcK_YlVTxYC:
+    title: Can Prompt Difficulty be Online Predicted for Accelerating RL Finetuning of Reasoning Models?
+    year: '2025'
+    citations: 12
   k_IJM867U9cC:
     title: 'Retinex-Diffusion: On Controlling Illumination Conditions in Diffusion Models via Retinex Theory'
     year: '2025'
@@ -80,10 +84,6 @@ papers:
     title: 'ScribbleGen: Generative Data Augmentation Improves Scribble-supervised Semantic Segmentation'
     year: Unknown
     citations: 12
-  RYcK_YlVTxYC:
-    title: Can Prompt Difficulty be Online Predicted for Accelerating RL Finetuning of Reasoning Models?
-    year: '2025'
-    citations: 11
   YFjsv_pBGBYC:
     title: 'MaskFlow: Discrete Flows For Flexible and Efficient Long Video Generation'
     year: '2025'

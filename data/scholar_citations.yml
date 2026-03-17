@@ -1,7 +1,7 @@
 metadata:
-  last_updated: '2026-03-15'
+  last_updated: '2026-03-17'
   scholar_id: EchdyZEAAAAJ
-  total_citations: 1383
+  total_citations: 1387
   paper_count: 37
 papers:
   Zph67rFs4hoC:
@@ -11,7 +11,7 @@ papers:
   r0BpntZqJG4C:
     title: 'ZigMa: A DiT-style Zigzag Mamba Diffusion Model'
     year: '2024'
-    citations: 213
+    citations: 214
   Se3iqnhoufwC:
     title: Attention-based multi-context guiding for few-shot semantic segmentation
     year: '2019'
@@ -31,7 +31,7 @@ papers:
   TFP_iSt0sucC:
     title: 'Diffusion Models and Representation Learning: A Survey'
     year: '2024'
-    citations: 56
+    citations: 57
   R3hNpaxXUhUC:
     title: Self-guided diffusion models
     year: '2023'
@@ -55,7 +55,7 @@ papers:
   iH-uZ7U-co4C:
     title: Continuous, Subject-Specific Attribute Control in T2I Models by Identifying Semantic Directions
     year: '2024'
-    citations: 30
+    citations: 31
   e5wmG9Sq2KIC:
     title: Flow Matching for Conditional Text Generation in a Few Sampling Steps
     year: '2024'
@@ -84,13 +84,13 @@ papers:
     title: 'ScribbleGen: Generative Data Augmentation Improves Scribble-supervised Semantic Segmentation'
     year: Unknown
     citations: 12
-  YFjsv_pBGBYC:
-    title: 'MaskFlow: Discrete Flows For Flexible and Efficient Long Video Generation'
-    year: '2025'
-    citations: 10
   maZDTaKrznsC:
     title: Distillation of Diffusion Features for Semantic Correspondence
     year: '2024'
+    citations: 11
+  YFjsv_pBGBYC:
+    title: 'MaskFlow: Discrete Flows For Flexible and Efficient Long Video Generation'
+    year: '2025'
     citations: 10
   qUcmZB5y_30C:
     title: Guided Diffusion from Self-Supervised Diffusion Features

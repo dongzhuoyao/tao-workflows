@@ -1,17 +1,17 @@
 metadata:
-  last_updated: '2026-03-31'
+  last_updated: '2026-04-14'
   scholar_id: EchdyZEAAAAJ
-  total_citations: 1416
+  total_citations: 1443
   paper_count: 37
 papers:
   Zph67rFs4hoC:
     title: 'Pointmixup: Augmentation for point clouds'
     year: '2020'
-    citations: 255
+    citations: 257
   r0BpntZqJG4C:
     title: 'ZigMa: A DiT-style Zigzag Mamba Diffusion Model'
     year: '2024'
-    citations: 220
+    citations: 225
   Se3iqnhoufwC:
     title: Attention-based multi-context guiding for few-shot semantic segmentation
     year: '2019'
@@ -19,35 +19,35 @@ papers:
   ns9cj8rnVeAC:
     title: 'DepthFM: Fast Generative Monocular Depth Estimation with Flow Matching'
     year: '2025'
-    citations: 135
+    citations: 137
   MXK_kJrjxJIC:
     title: Localizing the Common Action Among a Few Videos
     year: '2020'
     citations: 87
-  TFP_iSt0sucC:
-    title: 'Diffusion Models and Representation Learning: A Survey'
-    year: '2026'
-    citations: 60
   YOwf2qJgpHMC:
     title: 'Silco: Show a few images, localize the common object'
     year: '2019'
     citations: 60
+  TFP_iSt0sucC:
+    title: 'Diffusion Models and Representation Learning: A Survey'
+    year: '2026'
+    citations: 59
   R3hNpaxXUhUC:
     title: Self-guided diffusion models
     year: '2023'
-    citations: 54
+    citations: 56
   BqipwSGYUEgC:
     title: Boosting latent diffusion with flow matching
     year: '2024'
-    citations: 44
+    citations: 46
   mVmsd5A6BfQC:
     title: Latent space editing in transformer-based flow matching
     year: '2023'
-    citations: 41
+    citations: 44
   -f6ydRqryjwC:
     title: Motion Flow Matching for Human Motion Synthesis and Editing
     year: '2023'
-    citations: 37
+    citations: 39
   M3ejUd6NZC8C:
     title: Accelerating Convolutional Neural Networks with Dynamic Channel Pruning.
     year: '2019'
@@ -55,31 +55,31 @@ papers:
   iH-uZ7U-co4C:
     title: Continuous, Subject-Specific Attribute Control in T2I Models by Identifying Semantic Directions
     year: '2025'
-    citations: 31
+    citations: 32
   e5wmG9Sq2KIC:
     title: Flow Matching for Conditional Text Generation in a Few Sampling Steps
     year: '2024'
-    citations: 30
+    citations: 32
   ULOm3_A8WrAC:
     title: Self-supervised Video Representation Learning with Cross-Stream Prototypical Contrasting
     year: '2021'
     citations: 19
+  RYcK_YlVTxYC:
+    title: Can Prompt Difficulty be Online Predicted for Accelerating RL Finetuning of Reasoning Models?
+    year: '2026'
+    citations: 15
   qxL8FJ1GzNcC:
     title: Sobel heuristic kernel for aerial semantic segmentation
     year: '2018'
     citations: 14
-  RYcK_YlVTxYC:
-    title: Can Prompt Difficulty be Online Predicted for Accelerating RL Finetuning of Reasoning Models?
-    year: '2026'
+  k_IJM867U9cC:
+    title: 'Retinex-Diffusion: On Controlling Illumination Conditions in Diffusion Models via Retinex Theory'
+    year: '2025'
     citations: 13
   TQgYirikUcIC:
     title: Training Class-Imbalanced Diffusion Model Via Overlap Optimization
     year: '2024'
     citations: 13
-  k_IJM867U9cC:
-    title: 'Retinex-Diffusion: On Controlling Illumination Conditions in Diffusion Models via Retinex Theory'
-    year: '2025'
-    citations: 12
   maZDTaKrznsC:
     title: Distillation of Diffusion Features for Semantic Correspondence
     year: '2024'
@@ -88,38 +88,38 @@ papers:
     title: 'ScribbleGen: Generative Data Augmentation Improves Scribble-supervised Semantic Segmentation'
     year: Unknown
     citations: 12
+  YFjsv_pBGBYC:
+    title: 'MaskFlow: Discrete Flows For Flexible and Efficient Long Video Generation'
+    year: '2025'
+    citations: 11
   qUcmZB5y_30C:
     title: Guided Diffusion from Self-Supervised Diffusion Features
     year: '2023'
     citations: 11
-  YFjsv_pBGBYC:
-    title: 'MaskFlow: Discrete Flows For Flexible and Efficient Long Video Generation'
+  hMod-77fHWUC:
+    title: 'TREAD: Token Routing for Efficient Architecture-agnostic Diffusion Training'
     year: '2025'
-    citations: 10
+    citations: 7
   5nxA0vEk-isC:
     title: Interactivity Proposals for Surveillance Videos
     year: '2020'
     citations: 7
-  hMod-77fHWUC:
-    title: 'TREAD: Token Routing for Efficient Architecture-agnostic Diffusion Training'
-    year: '2025'
-    citations: 6
   GnPB-g6toBAC:
     title: 'ToddlerDiffusion: Interactive Structured Image Generation with Cascaded Schrödinger Bridge'
     year: Unknown
     citations: 6
+  J_g5lzvAfSwC:
+    title: 'ActAlign: Zero-Shot Fine-Grained Video Classification via Language-Guided Sequence Alignment'
+    year: '2025'
+    citations: 5
   ufrVoPGSRksC:
     title: 'Dense In Dense: Training Segmentation from Scratch'
     year: '2019'
     citations: 5
-  J_g5lzvAfSwC:
-    title: 'ActAlign: Zero-Shot Fine-Grained Video Classification via Language-Guided Sequence Alignment'
-    year: '2025'
-    citations: 4
   NMxIlDl6LWMC:
     title: Does VLM Classification Benefit from LLM Description Semantics?
     year: '2024'
-    citations: 3
+    citations: 4
   lSLTfruPkqcC:
     title: 'Purrception: Variational Flow Matching for Vector-Quantized Image Generation'
     year: '2026'

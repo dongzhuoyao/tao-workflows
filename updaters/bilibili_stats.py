@@ -6,11 +6,21 @@ Fetches follower count, views, and other stats from Bilibili and saves to YAML.
 """
 
 import os
+import logging
 import yaml
 import requests
 from datetime import datetime
+from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception_type
+
+logger = logging.getLogger(__name__)
 
 
+@retry(
+    stop=stop_after_attempt(3),
+    wait=wait_exponential(multiplier=1, min=2, max=30),
+    retry=retry_if_exception_type((requests.ConnectionError, requests.Timeout)),
+    before_sleep=lambda rs: logger.info("Retrying Bilibili fetch (attempt %d)...", rs.attempt_number + 1),
+)
 def get_user_stats(mid: str) -> dict | None:
     """Fetch user stats from Bilibili public API."""
     # User relation stats (followers, following)
@@ -30,7 +40,7 @@ def get_user_stats(mid: str) -> dict | None:
         stat_data = stat_resp.json()
 
         if stat_data.get("code") != 0:
-            print(f"Error from stat API: {stat_data.get('message')}")
+            logger.error("Error from stat API: %s", stat_data.get("message"))
             return None
 
         # Get user card (name, level, etc.)
@@ -49,8 +59,10 @@ def get_user_stats(mid: str) -> dict | None:
             "level": level_info.get("current_level", 0),
         }
 
+    except (requests.ConnectionError, requests.Timeout):
+        raise  # Let tenacity handle retry
     except Exception as e:
-        print(f"Error fetching Bilibili stats: {e}")
+        logger.error("Error fetching Bilibili stats: %s", e)
         return None
 
 
@@ -68,7 +80,7 @@ def update(config: dict) -> bool:
     output_file = config.get("output_file", "data/bilibili_stats.yml")
 
     if not mid:
-        print("Error: Please set 'mid' (Bilibili user ID) in config.yml")
+        logger.error("Please set 'mid' (Bilibili user ID) in config.yml")
         return False
 
     today = datetime.now().strftime("%Y-%m-%d")
@@ -81,23 +93,23 @@ def update(config: dict) -> bool:
                 existing_data = yaml.safe_load(f) or {}
             last_updated = existing_data.get("metadata", {}).get("last_updated")
             if last_updated == today:
-                print("Bilibili stats already updated today. Skipping.")
+                logger.info("Bilibili stats already updated today. Skipping.")
                 return False
         except Exception as e:
-            print(f"Warning: Could not read existing data: {e}")
+            logger.warning("Could not read existing data: %s", e)
 
     # Fetch stats
-    print(f"Fetching Bilibili stats for user ID: {mid}")
+    logger.info("Fetching Bilibili stats for user ID: %s", mid)
     stats = get_user_stats(mid)
 
     if not stats:
-        print("Error: Could not fetch Bilibili statistics")
+        logger.error("Could not fetch Bilibili statistics")
         return False
 
-    print(f"  Username: {stats['username']}")
-    print(f"  Followers: {stats['followers']:,}")
-    print(f"  Following: {stats['following']:,}")
-    print(f"  Level: {stats['level']}")
+    logger.info("  Username: %s", stats["username"])
+    logger.info("  Followers: %s", f"{stats['followers']:,}")
+    logger.info("  Following: %s", f"{stats['following']:,}")
+    logger.info("  Level: %s", stats["level"])
 
     # Build output data
     history = existing_data.get("history", {})
@@ -124,10 +136,10 @@ def update(config: dict) -> bool:
     try:
         with open(output_file, "w") as f:
             yaml.dump(output_data, f, width=1000, sort_keys=False, allow_unicode=True)
-        print(f"Saved to {output_file}")
+        logger.info("Saved to %s", output_file)
         return True
     except Exception as e:
-        print(f"Error saving file: {e}")
+        logger.error("Error saving file: %s", e)
         return False
 
 
@@ -140,5 +152,5 @@ if __name__ == "__main__":
         }
         update(test_config)
     else:
-        print("Usage: python bilibili_stats.py <user_mid>")
-        print("Example: python bilibili_stats.py 494163254")
+        logger.info("Usage: python bilibili_stats.py <user_mid>")
+        logger.info("Example: python bilibili_stats.py 494163254")

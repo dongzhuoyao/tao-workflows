@@ -1,18 +1,14 @@
 # tao-workflows
 
-Automated data fetchers powered by GitHub Actions. Runs daily cron jobs to fetch and store data that can be read anytime.
-
-## Features
-
-- **Daily automated updates** via GitHub Actions cron
-- **Modular design** - easily add new data fetchers
-- **Data stored in YAML** - easy to read and use in other projects
+Automated daily data collection for academic and social platform stats, powered by GitHub Actions.
 
 ## Available Updaters
 
-| Updater | Description | Output |
-|---------|-------------|--------|
-| `scholar` | Google Scholar citations | `data/scholar_citations.yml` |
+| Updater | Source | Output |
+|---------|--------|--------|
+| `scholar` | Google Scholar | `data/scholar_citations.yml` |
+| `youtube` | YouTube (via yt-dlp) | `data/youtube_subscribers.yml` |
+| `bilibili` | Bilibili API | `data/bilibili_stats.yml` |
 
 ## Setup
 
@@ -22,124 +18,72 @@ Edit `config.yml` with your settings:
 
 ```yaml
 scholar:
-  user_id: "YOUR_GOOGLE_SCHOLAR_ID"  # Find this in your Scholar profile URL
-  output_file: "data/scholar_citations.yml"
+  user_id: "YOUR_GOOGLE_SCHOLAR_ID"
+youtube:
+  channel: "@your_handle"
+bilibili:
+  mid: "YOUR_USER_ID"
 ```
 
-**How to find your Google Scholar ID:**
-1. Go to [Google Scholar](https://scholar.google.com)
-2. Click on your profile
-3. Look at the URL: `https://scholar.google.com/citations?user=XXXXXXXXXX`
-4. The `XXXXXXXXXX` part is your user ID
-
-### 2. Run locally (optional)
+### 2. Run locally
 
 ```bash
 pip install -r requirements.txt
-python main.py           # Run all updaters
-python main.py scholar   # Run specific updater
+python main.py              # Run all updaters
+python main.py scholar      # Run specific updater
+python main.py youtube bilibili  # Run multiple
 ```
 
-### 3. Enable GitHub Actions
+### 3. GitHub Actions
 
 Push to GitHub and the workflow will:
 - Run daily at 6:00 AM UTC
 - Commit updated data back to the repo
+- Send email notification on failure (via Resend)
 
-You can also trigger manually: **Actions** → **Daily Data Update** → **Run workflow**
-
-## Reading Data
-
-### From another repo (e.g., your website)
-
-Fetch the raw YAML file:
-
-```python
-import yaml
-import urllib.request
-
-url = "https://raw.githubusercontent.com/YOUR_USERNAME/tao-workflows/main/data/scholar_citations.yml"
-with urllib.request.urlopen(url) as f:
-    data = yaml.safe_load(f)
-    print(f"Total citations: {data['metadata']['total_citations']}")
-```
-
-### In Jekyll (al-folio theme)
-
-Add to your `_data` folder or fetch during build:
-
-```yaml
-# In _config.yml, you can reference external data
-# Or use a build step to fetch the YAML file
-```
+Manual trigger: **Actions** > **Daily Data Update** > **Run workflow**
 
 ## Adding New Updaters
 
 1. Create `updaters/your_updater.py`:
 
 ```python
+import logging
+from tenacity import retry, stop_after_attempt, wait_exponential
+
+logger = logging.getLogger(__name__)
+
 def update(config: dict) -> bool:
-    """
-    Fetch data and save to file.
-
-    Args:
-        config: Dictionary from config.yml
-
-    Returns:
-        True if updated, False if skipped
-    """
-    output_file = config.get("output_file", "data/your_data.yml")
-
+    """Fetch data and save to file. Return True if updated."""
     # Your fetch logic here
-    data = {"key": "value"}
-
-    # Save to file
-    with open(output_file, "w") as f:
-        yaml.dump(data, f)
-
     return True
 ```
 
-2. Register in `updaters/__init__.py`:
+2. Register in `updaters/__init__.py`
+3. Add config in `config.yml`
 
-```python
-from . import your_updater
+## Data Format
 
-UPDATERS = {
-    "scholar": scholar_citations,
-    "your_updater": your_updater,  # Add this
-}
-```
-
-3. Add config in `config.yml`:
-
-```yaml
-your_updater:
-  some_setting: "value"
-  output_file: "data/your_data.yml"
-```
-
-## Output Format
-
-### Scholar Citations (`data/scholar_citations.yml`)
+All data files use YAML with a consistent structure:
 
 ```yaml
 metadata:
-  last_updated: "2024-01-27"
-  scholar_id: "your_id"
-  total_citations: 1234
-  paper_count: 42
-
-papers:
-  abc123xyz:
-    title: "Your Paper Title"
-    year: "2024"
+  last_updated: "2026-01-30"
+  # ... source-specific metadata
+history:          # (youtube/bilibili)
+  "2026-01-28":
+    subscribers: 178
+papers:           # (scholar)
+  paper_id:
+    title: "Paper Title"
     citations: 100
-  def456uvw:
-    title: "Another Paper"
-    year: "2023"
-    citations: 50
 ```
+
+## GitHub Actions Secrets
+
+| Secret | Purpose |
+|--------|---------|
+| `RESEND_API_KEY` | Email failure notifications |
 
 ## License
 

@@ -8,11 +8,25 @@ No API key required.
 
 import os
 import json
+import logging
 import yaml
 import subprocess
 from datetime import datetime
+from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_result
+
+logger = logging.getLogger(__name__)
 
 
+def _is_none(result):
+    return result is None
+
+
+@retry(
+    stop=stop_after_attempt(3),
+    wait=wait_exponential(multiplier=1, min=2, max=30),
+    retry=retry_if_result(_is_none),
+    before_sleep=lambda rs: logger.info("Retrying YouTube fetch (attempt %d)...", rs.attempt_number + 1),
+)
 def get_channel_stats(channel_url: str) -> dict | None:
     """Fetch channel stats using yt-dlp."""
     try:
@@ -45,14 +59,15 @@ def get_channel_stats(channel_url: str) -> dict | None:
                         continue
 
         if result.stderr:
-            print(f"yt-dlp warnings: {result.stderr[:500]}")
+            logger.warning("yt-dlp warnings: %s", result.stderr[:500])
 
     except subprocess.TimeoutExpired:
-        print("Timeout fetching YouTube data")
+        logger.error("Timeout fetching YouTube data")
     except FileNotFoundError:
-        print("Error: yt-dlp not found. Install with: pip install yt-dlp")
+        logger.error("yt-dlp not found. Install with: pip install yt-dlp")
+        raise  # Don't retry if yt-dlp is not installed
     except Exception as e:
-        print(f"Error: {e}")
+        logger.error("Error: %s", e)
 
     return None
 
@@ -71,7 +86,7 @@ def update(config: dict) -> bool:
     output_file = config.get("output_file", "data/youtube_subscribers.yml")
 
     if not channel:
-        print("Error: Please set 'channel' (handle like @vincenttalk) in config.yml")
+        logger.error("Please set 'channel' (handle like @vincenttalk) in config.yml")
         return False
 
     today = datetime.now().strftime("%Y-%m-%d")
@@ -84,10 +99,10 @@ def update(config: dict) -> bool:
                 existing_data = yaml.safe_load(f) or {}
             last_updated = existing_data.get("metadata", {}).get("last_updated")
             if last_updated == today:
-                print("YouTube subscribers already updated today. Skipping.")
+                logger.info("YouTube subscribers already updated today. Skipping.")
                 return False
         except Exception as e:
-            print(f"Warning: Could not read existing data: {e}")
+            logger.warning("Could not read existing data: %s", e)
 
     # Build channel URL
     if channel.startswith("http"):
@@ -97,15 +112,15 @@ def update(config: dict) -> bool:
     else:
         channel_url = f"https://www.youtube.com/@{channel}"
 
-    print(f"Fetching stats from: {channel_url}")
+    logger.info("Fetching stats from: %s", channel_url)
     stats = get_channel_stats(channel_url)
 
     if not stats:
-        print("Error: Could not fetch channel statistics")
+        logger.error("Could not fetch channel statistics")
         return False
 
-    print(f"  Channel: {stats['channel_title']}")
-    print(f"  Subscribers: {stats['subscribers']:,}")
+    logger.info("  Channel: %s", stats["channel_title"])
+    logger.info("  Subscribers: %s", f"{stats['subscribers']:,}")
 
     # Build output data
     history = existing_data.get("history", {})
@@ -131,10 +146,10 @@ def update(config: dict) -> bool:
     try:
         with open(output_file, "w") as f:
             yaml.dump(output_data, f, width=1000, sort_keys=False, allow_unicode=True)
-        print(f"Saved to {output_file}")
+        logger.info("Saved to %s", output_file)
         return True
     except Exception as e:
-        print(f"Error saving file: {e}")
+        logger.error("Error saving file: %s", e)
         return False
 
 
@@ -147,5 +162,5 @@ if __name__ == "__main__":
         }
         update(test_config)
     else:
-        print("Usage: python youtube_subscribers.py <@handle or channel_url>")
-        print("Example: python youtube_subscribers.py @vincenttalk")
+        logger.info("Usage: python youtube_subscribers.py <@handle or channel_url>")
+        logger.info("Example: python youtube_subscribers.py @vincenttalk")

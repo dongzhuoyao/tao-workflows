@@ -14,3 +14,6 @@ env/
 # OS
 .DS_Store
 Thumbs.db
+
+# High-frequency local data (don't pollute git history)
+data/scheduler_status.yml

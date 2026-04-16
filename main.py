@@ -11,8 +11,16 @@ Usage:
 """
 
 import sys
+import logging
 import yaml
 from updaters import UPDATERS
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(name)s] %(levelname)s: %(message)s",
+    datefmt="%Y-%m-%d %H:%M:%S",
+)
+logger = logging.getLogger("tao-workflows")
 
 
 def load_config():
@@ -21,33 +29,33 @@ def load_config():
         with open("config.yml", "r") as f:
             return yaml.safe_load(f)
     except FileNotFoundError:
-        print("Error: config.yml not found")
+        logger.error("config.yml not found")
         sys.exit(1)
     except yaml.YAMLError as e:
-        print(f"Error parsing config.yml: {e}")
+        logger.error("Error parsing config.yml: %s", e)
         sys.exit(1)
 
 
 def run_updater(name: str, config: dict) -> bool:
     """Run a single updater by name"""
     if name not in UPDATERS:
-        print(f"Unknown updater: {name}")
-        print(f"Available: {', '.join(UPDATERS.keys())}")
+        logger.error("Unknown updater: %s", name)
+        logger.info("Available: %s", ", ".join(UPDATERS.keys()))
         return False
 
     updater_config = config.get(name, {})
     if not updater_config:
-        print(f"No config found for '{name}' in config.yml")
+        logger.error("No config found for '%s' in config.yml", name)
         return False
 
-    print(f"\n{'='*50}")
-    print(f"Running: {name}")
-    print(f"{'='*50}")
+    logger.info("=" * 50)
+    logger.info("Running: %s", name)
+    logger.info("=" * 50)
 
     try:
         return UPDATERS[name].update(updater_config)
     except Exception as e:
-        print(f"Error running {name}: {e}")
+        logger.error("Error running %s: %s", name, e)
         return False
 
 
@@ -65,12 +73,12 @@ def main():
         results[name] = run_updater(name, config)
 
     # Summary
-    print(f"\n{'='*50}")
-    print("Summary")
-    print(f"{'='*50}")
+    logger.info("=" * 50)
+    logger.info("Summary")
+    logger.info("=" * 50)
     for name, success in results.items():
         status = "OK" if success else "SKIPPED/FAILED"
-        print(f"  {name}: {status}")
+        logger.info("  %s: %s", name, status)
 
 
 if __name__ == "__main__":

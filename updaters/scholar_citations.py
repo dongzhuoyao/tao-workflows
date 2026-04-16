@@ -6,9 +6,12 @@ Fetches citation data from Google Scholar and saves to YAML.
 """
 
 import os
+import logging
 import yaml
 from datetime import datetime
 from scholarly import scholarly
+
+logger = logging.getLogger(__name__)
 
 
 def update(config: dict) -> bool:
@@ -25,10 +28,10 @@ def update(config: dict) -> bool:
     output_file = config.get("output_file", "data/scholar_citations.yml")
 
     if not user_id or user_id == "YOUR_GOOGLE_SCHOLAR_ID":
-        print("Error: Please set your Google Scholar user_id in config.yml")
+        logger.error("Please set your Google Scholar user_id in config.yml")
         return False
 
-    print(f"Fetching citations for Google Scholar ID: {user_id}")
+    logger.info("Fetching citations for Google Scholar ID: %s", user_id)
     today = datetime.now().strftime("%Y-%m-%d")
 
     # Check if already updated today
@@ -39,10 +42,10 @@ def update(config: dict) -> bool:
                 existing_data = yaml.safe_load(f) or {}
             last_updated = existing_data.get("metadata", {}).get("last_updated")
             if last_updated == today:
-                print("Citations already updated today. Skipping.")
+                logger.info("Citations already updated today. Skipping.")
                 return False
         except Exception as e:
-            print(f"Warning: Could not read existing data: {e}")
+            logger.warning("Could not read existing data: %s", e)
 
     # Fetch from Google Scholar
     citation_data = {
@@ -60,11 +63,11 @@ def update(config: dict) -> bool:
         author = scholarly.search_author_id(user_id)
         author_data = scholarly.fill(author)
     except Exception as e:
-        print(f"Error fetching author data: {e}")
+        logger.error("Error fetching author data: %s", e)
         return False
 
     if not author_data or "publications" not in author_data:
-        print("No publications found.")
+        logger.warning("No publications found.")
         return False
 
     # Extract citation stats
@@ -80,7 +83,7 @@ def update(config: dict) -> bool:
             citations = pub.get("num_citations", 0)
             total_citations += citations
 
-            print(f"  {title[:50]}... ({year}) - {citations} citations")
+            logger.info("  %s... (%s) - %d citations", title[:50], year, citations)
 
             citation_data["papers"][pub_id] = {
                 "title": title,
@@ -88,14 +91,14 @@ def update(config: dict) -> bool:
                 "citations": citations,
             }
         except Exception as e:
-            print(f"Warning: Error processing publication: {e}")
+            logger.warning("Error processing publication: %s", e)
 
     citation_data["metadata"]["total_citations"] = total_citations
     citation_data["metadata"]["paper_count"] = len(citation_data["papers"])
 
     # Check if data changed
     if existing_data.get("papers") == citation_data["papers"]:
-        print("No changes in citation data.")
+        logger.info("No changes in citation data.")
         citation_data["metadata"]["last_updated"] = today
 
     # Save to file
@@ -103,11 +106,11 @@ def update(config: dict) -> bool:
     try:
         with open(output_file, "w") as f:
             yaml.dump(citation_data, f, width=1000, sort_keys=False, allow_unicode=True)
-        print(f"Saved to {output_file}")
-        print(f"Total: {total_citations} citations across {len(citation_data['papers'])} papers")
+        logger.info("Saved to %s", output_file)
+        logger.info("Total: %d citations across %d papers", total_citations, len(citation_data["papers"]))
         return True
     except Exception as e:
-        print(f"Error saving file: {e}")
+        logger.error("Error saving file: %s", e)
         return False
 
 
@@ -118,4 +121,4 @@ if __name__ == "__main__":
         test_config = {"user_id": sys.argv[1], "output_file": "data/scholar_citations.yml"}
         update(test_config)
     else:
-        print("Usage: python scholar_citations.py <scholar_user_id>")
+        logger.info("Usage: python scholar_citations.py <scholar_user_id>")

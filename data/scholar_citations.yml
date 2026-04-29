@@ -1,17 +1,17 @@
 metadata:
-  last_updated: '2026-04-22'
+  last_updated: '2026-04-29'
   scholar_id: EchdyZEAAAAJ
-  total_citations: 1451
+  total_citations: 1470
   paper_count: 37
 papers:
   Zph67rFs4hoC:
     title: 'Pointmixup: Augmentation for point clouds'
     year: '2020'
-    citations: 258
+    citations: 259
   r0BpntZqJG4C:
     title: 'ZigMa: A DiT-style Zigzag Mamba Diffusion Model'
     year: '2024'
-    citations: 228
+    citations: 233
   Se3iqnhoufwC:
     title: Attention-based multi-context guiding for few-shot semantic segmentation
     year: '2019'
@@ -19,7 +19,7 @@ papers:
   ns9cj8rnVeAC:
     title: 'DepthFM: Fast Generative Monocular Depth Estimation with Flow Matching'
     year: '2025'
-    citations: 141
+    citations: 143
   MXK_kJrjxJIC:
     title: Localizing the Common Action Among a Few Videos
     year: '2020'
@@ -31,7 +31,7 @@ papers:
   TFP_iSt0sucC:
     title: 'Diffusion Models and Representation Learning: A Survey'
     year: '2026'
-    citations: 58
+    citations: 59
   R3hNpaxXUhUC:
     title: Self-guided diffusion models
     year: '2023'
@@ -39,7 +39,7 @@ papers:
   BqipwSGYUEgC:
     title: Boosting latent diffusion with flow matching
     year: '2024'
-    citations: 46
+    citations: 47
   mVmsd5A6BfQC:
     title: Latent space editing in transformer-based flow matching
     year: '2023'
@@ -47,7 +47,7 @@ papers:
   -f6ydRqryjwC:
     title: Motion Flow Matching for Human Motion Synthesis and Editing
     year: '2023'
-    citations: 39
+    citations: 41
   M3ejUd6NZC8C:
     title: Accelerating Convolutional Neural Networks with Dynamic Channel Pruning.
     year: '2019'
@@ -55,11 +55,11 @@ papers:
   iH-uZ7U-co4C:
     title: Continuous, Subject-Specific Attribute Control in T2I Models by Identifying Semantic Directions
     year: '2025'
-    citations: 32
+    citations: 33
   e5wmG9Sq2KIC:
     title: Flow Matching for Conditional Text Generation in a Few Sampling Steps
     year: '2024'
-    citations: 32
+    citations: 33
   ULOm3_A8WrAC:
     title: Self-supervised Video Representation Learning with Cross-Stream Prototypical Contrasting
     year: '2021'
@@ -67,15 +67,15 @@ papers:
   RYcK_YlVTxYC:
     title: Can Prompt Difficulty be Online Predicted for Accelerating RL Finetuning of Reasoning Models?
     year: '2026'
-    citations: 15
+    citations: 16
+  k_IJM867U9cC:
+    title: 'Retinex-Diffusion: On Controlling Illumination Conditions in Diffusion Models via Retinex Theory'
+    year: '2025'
+    citations: 14
   qxL8FJ1GzNcC:
     title: Sobel heuristic kernel for aerial semantic segmentation
     year: '2018'
     citations: 14
-  k_IJM867U9cC:
-    title: 'Retinex-Diffusion: On Controlling Illumination Conditions in Diffusion Models via Retinex Theory'
-    year: '2025'
-    citations: 13
   TQgYirikUcIC:
     title: Training Class-Imbalanced Diffusion Model Via Overlap Optimization
     year: '2024'
@@ -99,7 +99,7 @@ papers:
   hMod-77fHWUC:
     title: 'TREAD: Token Routing for Efficient Architecture-agnostic Diffusion Training'
     year: '2025'
-    citations: 7
+    citations: 8
   5nxA0vEk-isC:
     title: Interactivity Proposals for Surveillance Videos
     year: '2020'
@@ -108,14 +108,14 @@ papers:
     title: 'ToddlerDiffusion: Interactive Structured Image Generation with Cascaded Schrödinger Bridge'
     year: Unknown
     citations: 6
+  J_g5lzvAfSwC:
+    title: 'ActAlign: Zero-Shot Fine-Grained Video Classification via Language-Guided Sequence Alignment'
+    year: '2025'
+    citations: 5
   ufrVoPGSRksC:
     title: 'Dense In Dense: Training Segmentation from Scratch'
     year: '2019'
     citations: 5
-  J_g5lzvAfSwC:
-    title: 'ActAlign: Zero-Shot Fine-Grained Video Classification via Language-Guided Sequence Alignment'
-    year: '2025'
-    citations: 4
   NMxIlDl6LWMC:
     title: Does VLM Classification Benefit from LLM Description Semantics?
     year: '2024'
@@ -124,12 +124,12 @@ papers:
     title: 'Purrception: Variational Flow Matching for Vector-Quantized Image Generation'
     year: '2026'
     citations: 1
-  blknAaTinKkC:
-    title: '[MASK] is All You Need'
-    year: '2024'
-    citations: 0
   M3NEmzRMIkIC:
     title: Scaling Image Tokenizers with Grouped Spherical Quantization
+    year: '2024'
+    citations: 1
+  blknAaTinKkC:
+    title: '[MASK] is All You Need'
     year: '2024'
     citations: 0
   ZeXyd9-uunAC:

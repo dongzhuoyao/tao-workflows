@@ -1,10 +1,10 @@
 metadata:
-  last_updated: '2026-04-30'
+  last_updated: '2026-05-01'
   mid: '494163254'
   username: Vincent教你学AI
   space_url: https://space.bilibili.com/494163254
-  total_days: 90
-  latest_followers: 15410
+  total_days: 91
+  latest_followers: 15412
 history:
   '2026-01-28':
     followers: 15340
@@ -365,5 +365,9 @@ history:
     level: 4
   '2026-04-30':
     followers: 15410
+    following: 108
+    level: 4
+  '2026-05-01':
+    followers: 15412
     following: 108
     level: 4

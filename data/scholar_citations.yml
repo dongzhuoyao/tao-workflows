@@ -1,7 +1,7 @@
 metadata:
-  last_updated: '2026-05-04'
+  last_updated: '2026-05-06'
   scholar_id: EchdyZEAAAAJ
-  total_citations: 1479
+  total_citations: 1481
   paper_count: 37
 papers:
   Zph67rFs4hoC:
@@ -27,7 +27,7 @@ papers:
   TFP_iSt0sucC:
     title: 'Diffusion Models and Representation Learning: A Survey'
     year: '2026'
-    citations: 60
+    citations: 61
   YOwf2qJgpHMC:
     title: 'Silco: Show a few images, localize the common object'
     year: '2019'
@@ -108,14 +108,14 @@ papers:
     title: 'ToddlerDiffusion: Interactive Structured Image Generation with Cascaded Schrödinger Bridge'
     year: Unknown
     citations: 6
+  J_g5lzvAfSwC:
+    title: 'ActAlign: Zero-Shot Fine-Grained Video Classification via Language-Guided Sequence Alignment'
+    year: '2025'
+    citations: 5
   ufrVoPGSRksC:
     title: 'Dense In Dense: Training Segmentation from Scratch'
     year: '2019'
     citations: 5
-  J_g5lzvAfSwC:
-    title: 'ActAlign: Zero-Shot Fine-Grained Video Classification via Language-Guided Sequence Alignment'
-    year: '2025'
-    citations: 4
   NMxIlDl6LWMC:
     title: Does VLM Classification Benefit from LLM Description Semantics?
     year: '2024'

@@ -1,7 +1,7 @@
 metadata:
-  last_updated: '2026-05-17'
+  last_updated: '2026-05-19'
   scholar_id: EchdyZEAAAAJ
-  total_citations: 1498
+  total_citations: 1504
   paper_count: 37
 papers:
   Zph67rFs4hoC:
@@ -11,7 +11,7 @@ papers:
   r0BpntZqJG4C:
     title: 'ZigMa: A DiT-style Zigzag Mamba Diffusion Model'
     year: '2024'
-    citations: 240
+    citations: 241
   Se3iqnhoufwC:
     title: Attention-based multi-context guiding for few-shot semantic segmentation
     year: '2019'
@@ -27,7 +27,7 @@ papers:
   TFP_iSt0sucC:
     title: 'Diffusion Models and Representation Learning: A Survey'
     year: '2026'
-    citations: 63
+    citations: 64
   YOwf2qJgpHMC:
     title: 'Silco: Show a few images, localize the common object'
     year: '2019'
@@ -35,7 +35,7 @@ papers:
   R3hNpaxXUhUC:
     title: Self-guided diffusion models
     year: '2023'
-    citations: 57
+    citations: 58
   BqipwSGYUEgC:
     title: Boosting latent diffusion with flow matching
     year: '2024'
@@ -47,7 +47,7 @@ papers:
   -f6ydRqryjwC:
     title: Motion Flow Matching for Human Motion Synthesis and Editing
     year: '2023'
-    citations: 43
+    citations: 44
   e5wmG9Sq2KIC:
     title: Flow Matching for Conditional Text Generation in a Few Sampling Steps
     year: '2024'
@@ -60,14 +60,14 @@ papers:
     title: Continuous, Subject-Specific Attribute Control in T2I Models by Identifying Semantic Directions
     year: '2025'
     citations: 33
+  RYcK_YlVTxYC:
+    title: Can Prompt Difficulty be Online Predicted for Accelerating RL Finetuning of Reasoning Models?
+    year: '2026'
+    citations: 19
   ULOm3_A8WrAC:
     title: Self-supervised Video Representation Learning with Cross-Stream Prototypical Contrasting
     year: '2021'
     citations: 19
-  RYcK_YlVTxYC:
-    title: Can Prompt Difficulty be Online Predicted for Accelerating RL Finetuning of Reasoning Models?
-    year: '2026'
-    citations: 18
   k_IJM867U9cC:
     title: 'Retinex-Diffusion: On Controlling Illumination Conditions in Diffusion Models via Retinex Theory'
     year: '2025'
@@ -104,14 +104,14 @@ papers:
     title: Interactivity Proposals for Surveillance Videos
     year: '2020'
     citations: 7
+  J_g5lzvAfSwC:
+    title: 'ActAlign: Zero-Shot Fine-Grained Video Classification via Language-Guided Sequence Alignment'
+    year: '2025'
+    citations: 6
   GnPB-g6toBAC:
     title: 'ToddlerDiffusion: Interactive Structured Image Generation with Cascaded Schrödinger Bridge'
     year: Unknown
     citations: 6
-  J_g5lzvAfSwC:
-    title: 'ActAlign: Zero-Shot Fine-Grained Video Classification via Language-Guided Sequence Alignment'
-    year: '2025'
-    citations: 5
   ufrVoPGSRksC:
     title: 'Dense In Dense: Training Segmentation from Scratch'
     year: '2019'

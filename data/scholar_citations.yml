@@ -1,21 +1,21 @@
 metadata:
-  last_updated: '2026-05-19'
+  last_updated: '2026-05-28'
   scholar_id: EchdyZEAAAAJ
-  total_citations: 1504
+  total_citations: 1512
   paper_count: 37
 papers:
   Zph67rFs4hoC:
     title: 'Pointmixup: Augmentation for point clouds'
     year: '2020'
-    citations: 261
+    citations: 263
   r0BpntZqJG4C:
     title: 'ZigMa: A DiT-style Zigzag Mamba Diffusion Model'
     year: '2024'
-    citations: 241
+    citations: 243
   Se3iqnhoufwC:
     title: Attention-based multi-context guiding for few-shot semantic segmentation
     year: '2019'
-    citations: 182
+    citations: 181
   ns9cj8rnVeAC:
     title: 'DepthFM: Fast Generative Monocular Depth Estimation with Flow Matching'
     year: '2025'
@@ -27,7 +27,7 @@ papers:
   TFP_iSt0sucC:
     title: 'Diffusion Models and Representation Learning: A Survey'
     year: '2026'
-    citations: 64
+    citations: 65
   YOwf2qJgpHMC:
     title: 'Silco: Show a few images, localize the common object'
     year: '2019'
@@ -35,7 +35,7 @@ papers:
   R3hNpaxXUhUC:
     title: Self-guided diffusion models
     year: '2023'
-    citations: 58
+    citations: 59
   BqipwSGYUEgC:
     title: Boosting latent diffusion with flow matching
     year: '2024'
@@ -51,7 +51,7 @@ papers:
   e5wmG9Sq2KIC:
     title: Flow Matching for Conditional Text Generation in a Few Sampling Steps
     year: '2024'
-    citations: 35
+    citations: 36
   M3ejUd6NZC8C:
     title: Accelerating Convolutional Neural Networks with Dynamic Channel Pruning.
     year: '2019'
@@ -63,7 +63,7 @@ papers:
   RYcK_YlVTxYC:
     title: Can Prompt Difficulty be Online Predicted for Accelerating RL Finetuning of Reasoning Models?
     year: '2026'
-    citations: 19
+    citations: 20
   ULOm3_A8WrAC:
     title: Self-supervised Video Representation Learning with Cross-Stream Prototypical Contrasting
     year: '2021'
@@ -83,7 +83,7 @@ papers:
   maZDTaKrznsC:
     title: Distillation of Diffusion Features for Semantic Correspondence
     year: '2024'
-    citations: 12
+    citations: 13
   qUcmZB5y_30C:
     title: Guided Diffusion from Self-Supervised Diffusion Features
     year: '2023'

@@ -1,7 +1,7 @@
 metadata:
-  last_updated: '2026-05-28'
+  last_updated: '2026-05-30'
   scholar_id: EchdyZEAAAAJ
-  total_citations: 1512
+  total_citations: 1516
   paper_count: 37
 papers:
   Zph67rFs4hoC:
@@ -27,7 +27,7 @@ papers:
   TFP_iSt0sucC:
     title: 'Diffusion Models and Representation Learning: A Survey'
     year: '2026'
-    citations: 65
+    citations: 67
   YOwf2qJgpHMC:
     title: 'Silco: Show a few images, localize the common object'
     year: '2019'
@@ -40,12 +40,12 @@ papers:
     title: Boosting latent diffusion with flow matching
     year: '2024'
     citations: 47
-  mVmsd5A6BfQC:
-    title: Latent space editing in transformer-based flow matching
-    year: '2023'
-    citations: 44
   -f6ydRqryjwC:
     title: Motion Flow Matching for Human Motion Synthesis and Editing
+    year: '2023'
+    citations: 45
+  mVmsd5A6BfQC:
+    title: Latent space editing in transformer-based flow matching
     year: '2023'
     citations: 44
   e5wmG9Sq2KIC:
@@ -59,7 +59,7 @@ papers:
   iH-uZ7U-co4C:
     title: Continuous, Subject-Specific Attribute Control in T2I Models by Identifying Semantic Directions
     year: '2025'
-    citations: 33
+    citations: 34
   RYcK_YlVTxYC:
     title: Can Prompt Difficulty be Online Predicted for Accelerating RL Finetuning of Reasoning Models?
     year: '2026'

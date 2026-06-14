@@ -1,7 +1,7 @@
 metadata:
-  last_updated: '2026-06-13'
+  last_updated: '2026-06-14'
   scholar_id: EchdyZEAAAAJ
-  total_citations: 1552
+  total_citations: 1550
   paper_count: 37
 papers:
   Zph67rFs4hoC:
@@ -27,7 +27,7 @@ papers:
   TFP_iSt0sucC:
     title: 'Diffusion Models and Representation Learning: A Survey'
     year: '2026'
-    citations: 73
+    citations: 72
   R3hNpaxXUhUC:
     title: Self-guided diffusion models
     year: '2023'
@@ -123,7 +123,7 @@ papers:
   lSLTfruPkqcC:
     title: 'Purrception: Variational Flow Matching for Vector-Quantized Image Generation'
     year: '2026'
-    citations: 2
+    citations: 1
   M3NEmzRMIkIC:
     title: Scaling Image Tokenizers with Grouped Spherical Quantization
     year: '2024'

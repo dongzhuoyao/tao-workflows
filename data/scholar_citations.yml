@@ -1,7 +1,7 @@
 metadata:
-  last_updated: '2026-06-14'
+  last_updated: '2026-06-19'
   scholar_id: EchdyZEAAAAJ
-  total_citations: 1550
+  total_citations: 1551
   paper_count: 37
 papers:
   Zph67rFs4hoC:
@@ -19,7 +19,7 @@ papers:
   ns9cj8rnVeAC:
     title: 'DepthFM: Fast Generative Monocular Depth Estimation with Flow Matching'
     year: '2025'
-    citations: 155
+    citations: 157
   MXK_kJrjxJIC:
     title: Localizing the Common Action Among a Few Videos
     year: '2020'
@@ -51,11 +51,11 @@ papers:
   iH-uZ7U-co4C:
     title: Continuous, Subject-Specific Attribute Control in T2I Models by Identifying Semantic Directions
     year: '2025'
-    citations: 37
+    citations: 38
   e5wmG9Sq2KIC:
     title: Flow Matching for Conditional Text Generation in a Few Sampling Steps
     year: '2024'
-    citations: 36
+    citations: 35
   M3ejUd6NZC8C:
     title: Accelerating Convolutional Neural Networks with Dynamic Channel Pruning.
     year: '2019'
@@ -104,14 +104,14 @@ papers:
     title: Interactivity Proposals for Surveillance Videos
     year: '2020'
     citations: 7
-  J_g5lzvAfSwC:
-    title: 'ActAlign: Zero-Shot Fine-Grained Video Classification via Language-Guided Sequence Alignment'
-    year: '2025'
-    citations: 6
   GnPB-g6toBAC:
     title: 'ToddlerDiffusion: Interactive Structured Image Generation with Cascaded Schrödinger Bridge'
     year: Unknown
     citations: 6
+  J_g5lzvAfSwC:
+    title: 'ActAlign: Zero-Shot Fine-Grained Video Classification via Language-Guided Sequence Alignment'
+    year: '2025'
+    citations: 5
   ufrVoPGSRksC:
     title: 'Dense In Dense: Training Segmentation from Scratch'
     year: '2019'

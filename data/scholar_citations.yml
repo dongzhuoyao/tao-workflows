@@ -1,17 +1,17 @@
 metadata:
-  last_updated: '2026-07-20'
+  last_updated: '2026-07-27'
   scholar_id: EchdyZEAAAAJ
-  total_citations: 1611
+  total_citations: 1621
   paper_count: 38
 papers:
   Zph67rFs4hoC:
     title: 'Pointmixup: Augmentation for point clouds'
     year: '2020'
-    citations: 266
+    citations: 271
   r0BpntZqJG4C:
     title: 'ZigMa: A DiT-style Zigzag Mamba Diffusion Model'
     year: '2024'
-    citations: 264
+    citations: 265
   Se3iqnhoufwC:
     title: Attention-based multi-context guiding for few-shot semantic segmentation
     year: '2019'
@@ -19,7 +19,7 @@ papers:
   ns9cj8rnVeAC:
     title: 'DepthFM: Fast Generative Monocular Depth Estimation with Flow Matching'
     year: '2025'
-    citations: 165
+    citations: 170
   MXK_kJrjxJIC:
     title: Localizing the Common Action Among a Few Videos
     year: '2020'
@@ -27,7 +27,7 @@ papers:
   TFP_iSt0sucC:
     title: 'Diffusion Models and Representation Learning: A Survey'
     year: '2026'
-    citations: 80
+    citations: 81
   R3hNpaxXUhUC:
     title: Self-guided diffusion models
     year: '2023'
@@ -36,22 +36,22 @@ papers:
     title: 'Silco: Show a few images, localize the common object'
     year: '2019'
     citations: 60
-  BqipwSGYUEgC:
-    title: Boosting latent diffusion with flow matching
-    year: '2024'
-    citations: 49
   mVmsd5A6BfQC:
     title: Latent space editing in transformer-based flow matching
     year: '2023'
+    citations: 49
+  BqipwSGYUEgC:
+    title: Boosting latent diffusion with flow matching
+    year: '2024'
     citations: 48
   -f6ydRqryjwC:
     title: Motion Flow Matching for Human Motion Synthesis and Editing
     year: '2023'
-    citations: 48
+    citations: 47
   iH-uZ7U-co4C:
     title: Continuous, Subject-Specific Attribute Control in T2I Models by Identifying Semantic Directions
     year: '2025'
-    citations: 42
+    citations: 41
   e5wmG9Sq2KIC:
     title: Flow Matching for Conditional Text Generation in a Few Sampling Steps
     year: '2024'

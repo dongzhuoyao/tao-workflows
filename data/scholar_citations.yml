@@ -1,7 +1,7 @@
 metadata:
-  last_updated: '2026-08-03'
+  last_updated: '2026-08-10'
   scholar_id: EchdyZEAAAAJ
-  total_citations: 1605
+  total_citations: 1623
   paper_count: 38
 papers:
   Zph67rFs4hoC:
@@ -11,7 +11,7 @@ papers:
   r0BpntZqJG4C:
     title: 'ZigMa: A DiT-style Zigzag Mamba Diffusion Model'
     year: '2024'
-    citations: 267
+    citations: 270
   Se3iqnhoufwC:
     title: Attention-based multi-context guiding for few-shot semantic segmentation
     year: '2019'
@@ -19,11 +19,11 @@ papers:
   ns9cj8rnVeAC:
     title: 'DepthFM: Fast Generative Monocular Depth Estimation with Flow Matching'
     year: '2025'
-    citations: 168
+    citations: 171
   TFP_iSt0sucC:
     title: 'Diffusion Models and Representation Learning: A Survey'
     year: '2026'
-    citations: 85
+    citations: 87
   MXK_kJrjxJIC:
     title: Localizing the Common Action Among a Few Videos
     year: '2020'
@@ -55,7 +55,7 @@ papers:
   e5wmG9Sq2KIC:
     title: Flow Matching for Conditional Text Generation in a Few Sampling Steps
     year: '2024'
-    citations: 38
+    citations: 40
   M3ejUd6NZC8C:
     title: Accelerating Convolutional Neural Networks with Dynamic Channel Pruning.
     year: '2019'
@@ -63,7 +63,7 @@ papers:
   RYcK_YlVTxYC:
     title: Can Prompt Difficulty be Online Predicted for Accelerating RL Finetuning of Reasoning Models?
     year: '2026'
-    citations: 30
+    citations: 32
   ULOm3_A8WrAC:
     title: Self-supervised Video Representation Learning with Cross-Stream Prototypical Contrasting
     year: '2021'
@@ -84,30 +84,30 @@ papers:
     title: Sobel heuristic kernel for aerial semantic segmentation
     year: '2018'
     citations: 14
-  qUcmZB5y_30C:
-    title: Guided Diffusion from Self-Supervised Diffusion Features
-    year: '2023'
-    citations: 12
   bEWYMUwI8FkC:
     title: 'ScribbleGen: Generative Data Augmentation Improves Scribble-supervised Semantic Segmentation'
     year: Unknown
+    citations: 14
+  hMod-77fHWUC:
+    title: 'TREAD: Token Routing for Efficient Architecture-agnostic Diffusion Training'
+    year: '2025'
+    citations: 12
+  qUcmZB5y_30C:
+    title: Guided Diffusion from Self-Supervised Diffusion Features
+    year: '2023'
     citations: 12
   YFjsv_pBGBYC:
     title: 'MaskFlow: Discrete Flows For Flexible and Efficient Long Video Generation'
     year: '2025'
     citations: 11
-  hMod-77fHWUC:
-    title: 'TREAD: Token Routing for Efficient Architecture-agnostic Diffusion Training'
+  J_g5lzvAfSwC:
+    title: 'ActAlign: Zero-Shot Fine-Grained Video Classification via Language-Guided Sequence Alignment'
     year: '2025'
-    citations: 10
+    citations: 8
   5nxA0vEk-isC:
     title: Interactivity Proposals for Surveillance Videos
     year: '2020'
     citations: 7
-  J_g5lzvAfSwC:
-    title: 'ActAlign: Zero-Shot Fine-Grained Video Classification via Language-Guided Sequence Alignment'
-    year: '2025'
-    citations: 6
   M3NEmzRMIkIC:
     title: Scaling Image Tokenizers with Grouped Spherical Quantization
     year: '2024'

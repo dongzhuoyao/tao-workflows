@@ -1,7 +1,7 @@
 metadata:
-  last_updated: '2026-08-10'
+  last_updated: '2026-08-20'
   scholar_id: EchdyZEAAAAJ
-  total_citations: 1623
+  total_citations: 1632
   paper_count: 38
 papers:
   Zph67rFs4hoC:
@@ -15,11 +15,11 @@ papers:
   Se3iqnhoufwC:
     title: Attention-based multi-context guiding for few-shot semantic segmentation
     year: '2019'
-    citations: 182
+    citations: 183
   ns9cj8rnVeAC:
     title: 'DepthFM: Fast Generative Monocular Depth Estimation with Flow Matching'
     year: '2025'
-    citations: 171
+    citations: 173
   TFP_iSt0sucC:
     title: 'Diffusion Models and Representation Learning: A Survey'
     year: '2026'
@@ -39,19 +39,19 @@ papers:
   mVmsd5A6BfQC:
     title: Latent space editing in transformer-based flow matching
     year: '2023'
-    citations: 50
+    citations: 51
+  -f6ydRqryjwC:
+    title: Motion Flow Matching for Human Motion Synthesis and Editing
+    year: '2023'
+    citations: 49
   BqipwSGYUEgC:
     title: Boosting latent diffusion with flow matching
     year: '2024'
     citations: 48
-  -f6ydRqryjwC:
-    title: Motion Flow Matching for Human Motion Synthesis and Editing
-    year: '2023'
-    citations: 48
   iH-uZ7U-co4C:
     title: Continuous, Subject-Specific Attribute Control in T2I Models by Identifying Semantic Directions
     year: '2025'
-    citations: 43
+    citations: 44
   e5wmG9Sq2KIC:
     title: Flow Matching for Conditional Text Generation in a Few Sampling Steps
     year: '2024'
@@ -63,7 +63,7 @@ papers:
   RYcK_YlVTxYC:
     title: Can Prompt Difficulty be Online Predicted for Accelerating RL Finetuning of Reasoning Models?
     year: '2026'
-    citations: 32
+    citations: 33
   ULOm3_A8WrAC:
     title: Self-supervised Video Representation Learning with Cross-Stream Prototypical Contrasting
     year: '2021'
@@ -75,11 +75,11 @@ papers:
   maZDTaKrznsC:
     title: Distillation of Diffusion Features for Semantic Correspondence
     year: '2024'
-    citations: 15
+    citations: 16
   k_IJM867U9cC:
     title: 'Retinex-Diffusion: On Controlling Illumination Conditions in Diffusion Models via Retinex Theory'
     year: '2025'
-    citations: 14
+    citations: 15
   qxL8FJ1GzNcC:
     title: Sobel heuristic kernel for aerial semantic segmentation
     year: '2018'

@@ -1,7 +1,7 @@
 metadata:
-  last_updated: '2026-08-21'
+  last_updated: '2026-08-22'
   scholar_id: EchdyZEAAAAJ
-  total_citations: 1632
+  total_citations: 1635
   paper_count: 38
 papers:
   Zph67rFs4hoC:
@@ -23,7 +23,7 @@ papers:
   TFP_iSt0sucC:
     title: 'Diffusion Models and Representation Learning: A Survey'
     year: '2026'
-    citations: 87
+    citations: 88
   MXK_kJrjxJIC:
     title: Localizing the Common Action Among a Few Videos
     year: '2020'
@@ -63,7 +63,7 @@ papers:
   RYcK_YlVTxYC:
     title: Can Prompt Difficulty be Online Predicted for Accelerating RL Finetuning of Reasoning Models?
     year: '2026'
-    citations: 33
+    citations: 35
   ULOm3_A8WrAC:
     title: Self-supervised Video Representation Learning with Cross-Stream Prototypical Contrasting
     year: '2021'

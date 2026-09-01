@@ -1,17 +1,17 @@
 metadata:
-  last_updated: '2026-08-22'
+  last_updated: '2026-09-01'
   scholar_id: EchdyZEAAAAJ
-  total_citations: 1635
-  paper_count: 38
+  total_citations: 1648
+  paper_count: 39
 papers:
+  r0BpntZqJG4C:
+    title: 'ZigMa: A DiT-style Zigzag Mamba Diffusion Model'
+    year: '2024'
+    citations: 272
   Zph67rFs4hoC:
     title: 'Pointmixup: Augmentation for point clouds'
     year: '2020'
     citations: 272
-  r0BpntZqJG4C:
-    title: 'ZigMa: A DiT-style Zigzag Mamba Diffusion Model'
-    year: '2024'
-    citations: 270
   Se3iqnhoufwC:
     title: Attention-based multi-context guiding for few-shot semantic segmentation
     year: '2019'
@@ -19,15 +19,15 @@ papers:
   ns9cj8rnVeAC:
     title: 'DepthFM: Fast Generative Monocular Depth Estimation with Flow Matching'
     year: '2025'
-    citations: 173
+    citations: 176
   TFP_iSt0sucC:
     title: 'Diffusion Models and Representation Learning: A Survey'
     year: '2026'
-    citations: 88
+    citations: 89
   MXK_kJrjxJIC:
     title: Localizing the Common Action Among a Few Videos
     year: '2020'
-    citations: 64
+    citations: 65
   R3hNpaxXUhUC:
     title: Self-guided diffusion models
     year: '2023'
@@ -35,19 +35,19 @@ papers:
   YOwf2qJgpHMC:
     title: 'Silco: Show a few images, localize the common object'
     year: '2019'
-    citations: 58
+    citations: 59
   mVmsd5A6BfQC:
     title: Latent space editing in transformer-based flow matching
     year: '2023'
-    citations: 51
+    citations: 52
   -f6ydRqryjwC:
     title: Motion Flow Matching for Human Motion Synthesis and Editing
     year: '2023'
-    citations: 49
+    citations: 50
   BqipwSGYUEgC:
     title: Boosting latent diffusion with flow matching
     year: '2024'
-    citations: 48
+    citations: 49
   iH-uZ7U-co4C:
     title: Continuous, Subject-Specific Attribute Control in T2I Models by Identifying Semantic Directions
     year: '2025'
@@ -55,7 +55,7 @@ papers:
   e5wmG9Sq2KIC:
     title: Flow Matching for Conditional Text Generation in a Few Sampling Steps
     year: '2024'
-    citations: 40
+    citations: 41
   M3ejUd6NZC8C:
     title: Accelerating Convolutional Neural Networks with Dynamic Channel Pruning.
     year: '2019'
@@ -80,13 +80,13 @@ papers:
     title: 'Retinex-Diffusion: On Controlling Illumination Conditions in Diffusion Models via Retinex Theory'
     year: '2025'
     citations: 15
-  qxL8FJ1GzNcC:
-    title: Sobel heuristic kernel for aerial semantic segmentation
-    year: '2018'
-    citations: 14
   bEWYMUwI8FkC:
     title: 'ScribbleGen: Generative Data Augmentation Improves Scribble-supervised Semantic Segmentation'
     year: Unknown
+    citations: 15
+  qxL8FJ1GzNcC:
+    title: Sobel heuristic kernel for aerial semantic segmentation
+    year: '2018'
     citations: 14
   hMod-77fHWUC:
     title: 'TREAD: Token Routing for Efficient Architecture-agnostic Diffusion Training'
@@ -128,6 +128,10 @@ papers:
     title: 'Purrception: Variational Flow Matching for Vector-Quantized Image Generation'
     year: '2026'
     citations: 1
+  pqnbT2bcN3wC:
+    title: 'From State to Action: OODA-Tool for Reliable Multi-Turn Tool Use'
+    year: '2026'
+    citations: 0
   g5m5HwL7SMYC:
     title: Contrastive-Augmented Flow Matching for Style-Content Disentanglement
     year: '2026'
